@@ -1,0 +1,24 @@
+% Generado por scripts/generar_metricas.py — no editar a mano
+\newcommand{\NumPreguntas}{16}
+\newcommand{\NumFragmentos}{1421}
+\newcommand{\NumPaginas}{390}
+\newcommand{\HitSim}{1{,}000}
+\newcommand{\MrrSim}{1{,}000}
+\newcommand{\PSim}{0{,}729}
+\newcommand{\DivSim}{1{,}938}
+\newcommand{\LatSim}{0{,}714}
+\newcommand{\HitMMR}{1{,}000}
+\newcommand{\MrrMMR}{1{,}000}
+\newcommand{\PMMR}{0{,}625}
+\newcommand{\DivMMR}{2{,}188}
+\newcommand{\LatMMR}{0{,}612}
+\newcommand{\PctCitas}{100\,\%}
+\newcommand{\LatGen}{8{,}1}
+\newcommand{\AnalisisRecuperacion}{Ambas estrategias recuperan al menos un fragmento relevante en todas las preguntas (Hit@6 de 1{,}000 con similitud y 1{,}000 con MMR). MMR eleva la diversidad de fuentes por consulta de 1{,}938 a 2{,}188, lo que aporta contexto comparado; ambas estrategias empatan en MRR. La menor P@6 de MMR es esperable: al penalizar la redundancia sustituye fragmentos contiguos del mismo artículo por fragmentos de otras fuentes.}
+\newcommand{\AnalisisGeneracion}{En la inspección manual (\texttt{eval/resultados/respuestas.md}), las respuestas distinguen correctamente el carácter facultativo de la EIPD en el Perú frente a su obligatoriedad en el RGPD, y no se observaron artículos inventados. En 3 respuestas el modelo advierte de forma explícita que el corpus no cubre una parte de la pregunta (p. ej., que no existe una lista peruana de criterios de alto riesgo equivalente a WP248). Es el comportamiento esperado del prompt de fundamentación.}
+\newcommand{\TablaCorpus}{LPDP & Ley N.º 29733 (Perú) & 17 & 63 \\
+RLPDP & D.S. N.º 016-2024-JUS (Perú) & 60 & 200 \\
+RGPD & Reglamento (UE) 2016/679 (Unión Europea) & 88 & 449 \\
+WP248 & WP248 rev.01 (Unión Europea) & 22 & 79 \\
+AEPD & AEPD (España) & 160 & 486 \\
+NIST-PF & NIST Privacy Framework v1.0 (EE. UU.) & 43 & 144 \\}

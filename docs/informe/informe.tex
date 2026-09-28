@@ -1,0 +1,186 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+\usepackage[spanish,es-noshorthands,es-tabla]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{positioning,arrows.meta,fit,backgrounds}
+\usepackage{listings}
+\usepackage{cite}
+\usepackage[hidelinks]{hyperref}
+
+\lstset{basicstyle=\ttfamily\scriptsize,breaklines=true,frame=single,columns=fullflexible,
+  literate={á}{{\'a}}1 {é}{{\'e}}1 {í}{{\'i}}1 {ó}{{\'o}}1 {ú}{{\'u}}1 {ñ}{{\~n}}1 {¿}{{?`}}1 {º}{{o}}1 {Á}{{\'A}}1 {É}{{\'E}}1 {Í}{{\'I}}1 {Ó}{{\'O}}1 {Ú}{{\'U}}1 {ü}{{\"u}}1 {°}{{o}}1 {¡}{{!`}}1 {—}{{--}}1 {–}{{-}}1 {“}{{``}}1 {”}{{''}}1}
+
+\input{metricas}
+
+\begin{document}
+
+\title{Recuperación Aumentada por Generación para la Evaluación de Impacto relativa a la Protección de Datos Personales: Avance de un Agente de Auditoría de Privacidad}
+
+\author{
+\IEEEauthorblockN{Dylan Antonio Zúñiga Huarca, Jeferson Joao Basurco Casani, Adrian Issac Mamani Quispe}
+\IEEEauthorblockA{Escuela Profesional de Ingeniería de Sistemas\\
+Universidad Nacional de San Agustín de Arequipa, Arequipa, Perú}
+}
+
+\maketitle
+
+\begin{abstract}
+La Evaluación de Impacto relativa a la Protección de Datos (EIPD o PIA) obliga al auditor a contrastar un tratamiento con normas extensas y heterogéneas. En el Perú, el nuevo Reglamento de la Ley N.º 29733 (D.S. 016-2024-JUS) la incorpora como mecanismo de responsabilidad proactiva. Este artículo presenta el primer avance de un agente inteligente de apoyo a la EIPD: un sistema de Recuperación Aumentada por Generación (RAG) construido sobre un corpus de seis documentos normativos y metodológicos (LPDP, RLPDP, RGPD, WP248, guía de la AEPD y NIST Privacy Framework). Ese corpus suma \NumPaginas{} páginas y \NumFragmentos{} fragmentos. El sistema fragmenta el texto respetando la estructura de artículos y conserva metadatos de fuente, artículo, página y jurisdicción. Indexa los fragmentos con \texttt{gemini-embedding-001} en ChromaDB, recupera con \emph{Maximal Marginal Relevance} (MMR) y genera respuestas citadas con \texttt{gemini-2.5-flash} bajo un prompt de fundamentación estricta. Sobre un conjunto de \NumPreguntas{} preguntas de referencia, la recuperación MMR alcanza Hit@6 = \HitMMR{} y MRR = \MrrMMR{}, y el \PctCitas{} de las respuestas generadas incluye citas verificables. Los resultados respaldan el uso del RAG como herramienta de consulta normativa del agente completo, que se presentará en la tercera unidad.
+\end{abstract}
+
+\begin{IEEEkeywords}
+Evaluación de impacto de privacidad, protección de datos personales, RAG, modelos de lenguaje, auditoría de sistemas, Ley 29733.
+\end{IEEEkeywords}
+
+%=====================================================================
+\section{Introducción}
+El tratamiento masivo de datos personales en servicios digitales, sistemas de inteligencia artificial y plataformas de gobierno electrónico aumenta los riesgos para los derechos de las personas. La Evaluación de Impacto relativa a la Protección de Datos (EIPD), conocida internacionalmente como \emph{Privacy Impact Assessment} (PIA), es el instrumento que permite identificar y mitigar esos riesgos \emph{antes} de iniciar el tratamiento \cite{clarke2009pia,wright2012pia}.
+
+En la Unión Europea, el artículo 35 del RGPD vuelve obligatoria la EIPD cuando es probable que un tratamiento entrañe un alto riesgo \cite{rgpd2016}. En el Perú, el Reglamento de la Ley N.º 29733 aprobado por D.S. N.º 016-2024-JUS la define como un mecanismo de responsabilidad proactiva. Su artículo 40 la establece como facultativa y recomendada para datos sensibles, perfilamiento, personas vulnerables o grandes volúmenes, y permite elaborarla tomando como referencia la NTP-ISO/IEC 27005 y la NTP-ISO 31000 \cite{ds0162024}; en el plano internacional, su proceso está estandarizado en la ISO/IEC 29134 \cite{iso29134}. Además, el artículo 125 del mismo reglamento considera atenuante de la sanción haberla implementado.
+
+Realizar una EIPD exige que el auditor consulte y relacione varias fuentes: la ley nacional, su reglamento, el derecho comparado y guías metodológicas. Este trabajo es lento y propenso a omisiones. Los modelos de lenguaje de gran tamaño (LLM) pueden asistir en él, pero generan afirmaciones no fundamentadas (``alucinaciones''), un riesgo documentado incluso en herramientas legales comerciales \cite{magesh2024hallucination}. La técnica RAG mitiga ese problema al condicionar la generación a fragmentos recuperados de un corpus verificable \cite{lewis2020rag,gao2023survey}.
+
+El Trabajo de Investigación Formativa (TIF) propone un \emph{agente de evaluación de impacto de privacidad}. Este avance entrega su componente de conocimiento: un RAG normativo que responde con citas a fuente, artículo y página. Sus contribuciones son:
+\begin{itemize}
+  \item un corpus curado y trazable sobre la EIPD, centrado en el marco peruano y complementado con referencias internacionales;
+  \item un pipeline de fragmentación consciente de la estructura de artículos, con metadatos que permiten citar con precisión;
+  \item una evaluación cuantitativa de la recuperación que compara búsqueda por similitud y MMR, más un análisis de las respuestas generadas.
+\end{itemize}
+
+%=====================================================================
+\section{Marco teórico}
+
+\subsection{Evaluación de impacto relativa a la protección de datos}
+La EIPD es un proceso sistemático con cuatro partes: describir el tratamiento, evaluar su necesidad y proporcionalidad, identificar y valorar los riesgos para los derechos y libertades, y definir las medidas para afrontarlos \cite{rgpd2016,wp248}. Las directrices WP248 proponen nueve criterios de alto riesgo, entre ellos la evaluación o el perfilamiento, las decisiones automatizadas, la observación sistemática, los datos sensibles y el tratamiento a gran escala. Como regla práctica, un tratamiento que cumple dos o más criterios suele requerir una EIPD \cite{wp248}. La guía de la AEPD integra la EIPD en la gestión del riesgo y estima el nivel de riesgo a partir de la probabilidad y el impacto \cite{aepd2021}. Por su parte, el NIST Privacy Framework organiza las actividades en las funciones \emph{Identify-P}, \emph{Govern-P}, \emph{Control-P}, \emph{Communicate-P} y \emph{Protect-P} \cite{nist2020pf}.
+
+\subsection{Recuperación Aumentada por Generación}
+RAG combina un recuperador no paramétrico con un generador paramétrico \cite{lewis2020rag}. Dada una consulta $q$, el recuperador obtiene los $k$ fragmentos $\{d_i\}$ más relevantes de un índice vectorial y el generador produce la respuesta $y \sim p_\theta(y \mid q, d_1,\dots,d_k)$. La relevancia se mide con la similitud coseno entre los embeddings $\mathbf{e}_q$ y $\mathbf{e}_{d}$.
+
+\subsection{Maximal Marginal Relevance}
+Los textos normativos contienen muchos fragmentos casi redundantes; por ejemplo, un mismo artículo puede quedar dividido en varios fragmentos. MMR \cite{carbonell1998mmr} reordena los candidatos para equilibrar relevancia y diversidad:
+\begin{equation}
+d^{*} = \arg\max_{d_i \in R\setminus S}\Big[\lambda\,\mathrm{sim}(d_i,q) - (1-\lambda)\max_{d_j\in S}\mathrm{sim}(d_i,d_j)\Big]
+\end{equation}
+donde $R$ es el conjunto de candidatos, $S$ el de fragmentos ya seleccionados y $\lambda\in[0,1]$ controla el equilibrio entre relevancia y diversidad.
+
+%=====================================================================
+\section{Trabajos relacionados}
+Clarke \cite{clarke2009pia} y Wright \cite{wright2012pia} describen el origen y el estado del arte de las PIA como práctica de gestión del riesgo, y la norma ISO/IEC 29134 \cite{iso29134} estandariza su proceso. En el campo de la IA, Gao \textit{et al.} \cite{gao2023survey} revisan las variantes de RAG (\emph{naive}, avanzado y modular) y sus métricas de evaluación. RAGAS \cite{es2023ragas} propone métricas automáticas de fidelidad y relevancia. Magesh \textit{et al.} \cite{magesh2024hallucination} muestran que incluso los sistemas legales basados en RAG alucinan con frecuencia, por lo que resulta importante exigir citas verificables y evaluar la recuperación de forma independiente. Nuestro trabajo aplica estas ideas al dominio concreto de la EIPD y a la normativa peruana vigente desde 2025.
+
+%=====================================================================
+\section{Diseño del sistema}
+
+La Fig.~\ref{fig:arq} resume la arquitectura. La implementación usa Python~3.12, LangChain, ChromaDB y la API de Gemini.
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[
+  node distance=4mm and 3mm,
+  box/.style={draw, rounded corners=2pt, align=center, font=\scriptsize, minimum height=7mm, text width=17mm, fill=white},
+  db/.style={box, fill=blue!8},
+  llm/.style={box, fill=orange!12},
+  ar/.style={-{Stealth[length=2mm]}, thick}]
+\node[box] (pdf) {Corpus PDF\\(6 docs)};
+\node[box, right=of pdf] (clean) {Extracción y limpieza};
+\node[box, right=of clean] (chunk) {Fragmentación por artículos};
+\node[db, below=of chunk] (vec) {ChromaDB\\coseno, 768 d};
+\node[llm, left=of vec] (emb) {gemini-embedding-001};
+\node[box, left=of emb] (q) {Pregunta del auditor};
+\node[box, below=of vec] (mmr) {MMR\\$k{=}6$ de 24};
+\node[llm, left=of mmr] (gen) {gemini-2.5-flash + prompt};
+\node[box, left=of gen, fill=green!10] (out) {Respuesta con citas [n]};
+\draw[ar] (pdf) -- (clean); \draw[ar] (clean) -- (chunk);
+\draw[ar] (chunk) -- node[right, font=\tiny]{embeddings} (vec);
+\draw[ar] (q) -- (emb); \draw[ar] (emb) -- (vec);
+\draw[ar] (vec) -- (mmr); \draw[ar] (mmr) -- (gen); \draw[ar] (gen) -- (out);
+\end{tikzpicture}
+\caption{Arquitectura del RAG normativo. Arriba, la ingesta fuera de línea; abajo, la consulta en línea.}
+\label{fig:arq}
+\end{figure}
+
+\subsection{Corpus}
+La Tabla~\ref{tab:corpus} lista los documentos. Se priorizó la normativa peruana vigente (LPDP y el nuevo RLPDP), complementada con la fuente europea de la EIPD (RGPD y WP248) y dos marcos metodológicos de gestión del riesgo (AEPD y NIST). Todos son documentos públicos.
+
+\begin{table}[t]
+\centering
+\caption{Corpus indexado}
+\label{tab:corpus}
+\scriptsize
+\begin{tabular}{@{}llrr@{}}
+\toprule
+Sigla & Documento (jurisdicción) & Págs. & Frag. \\
+\midrule
+\TablaCorpus
+\midrule
+\multicolumn{2}{@{}l}{Total} & \NumPaginas & \NumFragmentos \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Preprocesamiento y fragmentación}
+El texto se extrae por página con \texttt{pypdf} y se normalizan varios artefactos: ligaduras separadas (``modifi catoria''), guiones de corte de línea y espacios redundantes. Los fragmentos se generan con un \emph{splitter} recursivo de 1200 caracteres y 200 de solapamiento, cuyos separadores priorizan \texttt{TÍTULO}, \texttt{CAPÍTULO} y \texttt{Artículo}, de modo que los cortes caigan en los límites naturales de la norma. Cada fragmento conserva el desplazamiento de inicio, que sirve para calcular su página. Su artículo se asigna mediante una expresión regular: se toma el primer encabezado que aparece dentro del fragmento o, si no hay ninguno, el último anterior. Esa detección solo se aplica a las normas; en las guías, cadenas como ``Article 29 Working Party'' generarían falsos positivos. En el RGPD, los fragmentos anteriores al articulado se etiquetan con su \emph{considerando}. Como las notas al pie usan el mismo formato ``(1) DO C\ldots'', solo se aceptan los números que siguen la secuencia 1, 2, 3\ldots. Así se obtienen citas del tipo ``RLPDP, art.~40, p.~24'' o ``RGPD, cons.~91, p.~17''.
+
+\subsection{Indexación}
+Los fragmentos se vectorizan con \texttt{gemini-embedding-001}, un modelo multilingüe que permite consultar en español documentos en inglés como WP248 y el NIST Privacy Framework. Se usa el tipo de tarea \texttt{RETRIEVAL\_DOCUMENT} y una dimensión reducida a 768, gracias a su entrenamiento Matryoshka. Los vectores se almacenan en ChromaDB con índice HNSW y distancia coseno. Para respetar los límites del plan gratuito, la ingesta procesa lotes de 50 fragmentos con pausas y reintentos exponenciales.
+
+\subsection{Recuperación y generación}
+La consulta se vectoriza con el tipo \texttt{RETRIEVAL\_QUERY}. Se obtienen 24 candidatos, de los que MMR con $\lambda=0{,}6$ selecciona 6. De forma opcional, se filtra por jurisdicción a través de los metadatos. Los fragmentos se numeran [1]..[6] con su etiqueta de procedencia y se pasan a \texttt{gemini-2.5-flash} ($T=0{,}1$). El prompt de sistema le exige cuatro cosas: responder solo con el contexto, citar cada afirmación, declarar explícitamente cuando la información sea insuficiente y distinguir la norma peruana vinculante de las referencias comparadas.
+
+\subsection{Protocolo de evaluación}
+Se construyó un conjunto de \NumPreguntas{} preguntas que cubre obligatoriedad, contenido mínimo, criterios de alto riesgo, consulta previa, principios, derechos, seguridad, transferencias y metodologías de riesgo. Cada pregunta tiene anotadas las fuentes, los artículos y, en el RGPD, los considerandos relevantes. Un fragmento recuperado cuenta como relevante si coincide con una fuente esperada y, cuando se especifican artículos o considerandos, también con uno de ellos. Se reportan Hit@$k$, \emph{Mean Reciprocal Rank} (MRR) y Precision@$k$ para dos estrategias: similitud pura y MMR. Además, se generan respuestas para todas las preguntas y se mide la proporción que contiene citas.
+
+%=====================================================================
+\section{Resultados}
+
+\begin{table}[t]
+\centering
+\caption{Métricas de recuperación ($k=6$, \NumPreguntas{} preguntas)}
+\label{tab:ret}
+\scriptsize
+\begin{tabular}{@{}lccccc@{}}
+\toprule
+Estrategia & Hit@6 & MRR & P@6 & Fuentes dist. & Lat. (s) \\
+\midrule
+Similitud & \HitSim & \MrrSim & \PSim & \DivSim & \LatSim \\
+MMR ($\lambda{=}0{,}6$) & \HitMMR & \MrrMMR & \PMMR & \DivMMR & \LatMMR \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+La Tabla~\ref{tab:ret} resume la recuperación. \AnalisisRecuperacion
+
+En cuanto a la generación, el \PctCitas{} de las respuestas incluye citas numeradas a los fragmentos, y la latencia media de extremo a extremo fue de \LatGen{}~s. \AnalisisGeneracion
+
+La Fig.~\ref{fig:ejemplo} muestra una respuesta real del sistema a una pregunta central para la EIPD en el Perú.
+
+\begin{figure}[t]
+\lstinputlisting{ejemplo.txt}
+\caption{Respuesta del RAG (extracto) a ``¿Es obligatoria la evaluación de impacto de protección de datos personales en el Perú?''.}
+\label{fig:ejemplo}
+\end{figure}
+
+%=====================================================================
+\section{Discusión y limitaciones}
+\begin{itemize}
+  \item \textbf{Tamaño y construcción del conjunto de evaluación.} Con \NumPreguntas{} preguntas, las métricas son indicativas y no concluyentes. El conjunto se refinó entre iteraciones. En la primera versión, los fragmentos de considerandos del RGPD carecían de etiqueta, una guía tenía un falso positivo de artículo y la anotación omitía el art.~25 de la LPDP; con ello, la recuperación obtuvo Hit@6 = 0{,}938 y MRR = 0{,}818 (similitud). Tras corregir la fragmentación y reconocer como relevantes los considerandos que tratan cada tema, las métricas llegan al techo. Por ello, se requiere un conjunto más amplio y anotado de forma independiente, con preguntas más difíciles. Para la versión final se ampliará el conjunto y se añadirán métricas de fidelidad del tipo RAGAS \cite{es2023ragas}.
+  \item \textbf{Calidad de extracción.} El corpus incluye documentos en PDF a dos columnas o con tablas (AEPD, NIST), que pierden estructura al extraerse. Una extracción consciente del diseño mejoraría esos fragmentos.
+  \item \textbf{Cobertura normativa.} Las normas técnicas ISO/IEC 29134, NTP-ISO/IEC 27005 y NTP-ISO 31000 no se incluyeron porque son documentos con derechos de autor. Las disposiciones complementarias que emita la ANPD sobre la EIPD deberán incorporarse cuando se publiquen.
+  \item \textbf{Responsabilidad.} El sistema apoya al auditor, pero no reemplaza su juicio profesional ni constituye asesoría legal.
+\end{itemize}
+
+%=====================================================================
+\section{Conclusiones y trabajo futuro}
+Se implementó y evaluó un RAG normativo especializado en la EIPD. Recupera con precisión los artículos clave, como el art.~35 del RGPD y el art.~40 del RLPDP, y genera respuestas trazables con cita a fuente, artículo y página. La fragmentación consciente de la estructura legal y los metadatos de procedencia resultaron esenciales para esa trazabilidad. En la tercera unidad, este RAG será la herramienta de conocimiento del \emph{agente de evaluación de impacto de privacidad}. El agente guiará la descripción del tratamiento, aplicará un tamizaje con los criterios de WP248, el art.~35 del RGPD y el art.~40 del RLPDP, valorará los riesgos según su probabilidad e impacto, propondrá medidas y generará automáticamente el informe de la EIPD.
+
+\bibliographystyle{IEEEtran}
+\bibliography{referencias}
+
+\end{document}

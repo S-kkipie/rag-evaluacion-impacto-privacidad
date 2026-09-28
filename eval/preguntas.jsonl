@@ -1,0 +1,16 @@
+{"id": 1, "pregunta": "¿Cuándo es obligatorio realizar una evaluación de impacto relativa a la protección de datos según el RGPD?", "esperado": [{"fuente": "RGPD", "articulos": ["35"], "considerandos": ["84", "89", "90", "91"]}, {"fuente": "WP248"}]}
+{"id": 2, "pregunta": "¿Qué contenido mínimo debe incluir una evaluación de impacto de protección de datos?", "esperado": [{"fuente": "RGPD", "articulos": ["35"], "considerandos": ["90"]}, {"fuente": "WP248"}, {"fuente": "AEPD"}]}
+{"id": 3, "pregunta": "¿Es obligatoria la evaluación de impacto de protección de datos personales en el Perú?", "esperado": [{"fuente": "RLPDP", "articulos": ["40"]}]}
+{"id": 4, "pregunta": "¿Qué norma técnica peruana puede usarse como referencia para elaborar la evaluación de impacto?", "esperado": [{"fuente": "RLPDP", "articulos": ["40"]}]}
+{"id": 5, "pregunta": "¿Cuándo debe el responsable consultar previamente a la autoridad de control antes de iniciar un tratamiento?", "esperado": [{"fuente": "RGPD", "articulos": ["36"], "considerandos": ["94", "95", "96"]}]}
+{"id": 6, "pregunta": "¿Qué se considera dato sensible según la Ley 29733?", "esperado": [{"fuente": "LPDP", "articulos": ["2"]}, {"fuente": "RLPDP", "articulos": ["III"]}]}
+{"id": 7, "pregunta": "¿Cuáles son los principios rectores de la protección de datos personales en el Perú?", "esperado": [{"fuente": "LPDP", "articulos": ["4", "5", "6", "7", "8", "9", "10", "11", "12"]}, {"fuente": "RLPDP"}]}
+{"id": 8, "pregunta": "¿Haber realizado una evaluación de impacto puede atenuar una sanción en el Perú?", "esperado": [{"fuente": "RLPDP", "articulos": ["125"]}]}
+{"id": 9, "pregunta": "¿Qué criterios indican que un tratamiento probablemente entraña un alto riesgo y requiere EIPD?", "esperado": [{"fuente": "WP248"}, {"fuente": "RGPD", "articulos": ["35"], "considerandos": ["75", "91"]}, {"fuente": "AEPD"}]}
+{"id": 10, "pregunta": "¿En qué consiste la protección de datos desde el diseño y por defecto?", "esperado": [{"fuente": "RGPD", "articulos": ["25"], "considerandos": ["78"]}, {"fuente": "AEPD"}, {"fuente": "RLPDP"}]}
+{"id": 11, "pregunta": "¿Qué medidas de seguridad debe adoptar el titular del banco de datos personales en el Perú?", "esperado": [{"fuente": "LPDP", "articulos": ["16"]}, {"fuente": "RLPDP"}]}
+{"id": 12, "pregunta": "¿En qué plazo debe notificarse una violación de la seguridad de los datos a la autoridad de control según el RGPD?", "esperado": [{"fuente": "RGPD", "articulos": ["33"], "considerandos": ["85", "86", "87", "88"]}]}
+{"id": 13, "pregunta": "¿Cuáles son las funciones del Core del NIST Privacy Framework?", "esperado": [{"fuente": "NIST-PF"}]}
+{"id": 14, "pregunta": "¿Cómo se estima el nivel de riesgo a partir de la probabilidad y el impacto en un tratamiento de datos?", "esperado": [{"fuente": "AEPD"}, {"fuente": "NIST-PF"}]}
+{"id": 15, "pregunta": "¿Cuándo está permitido el flujo transfronterizo de datos personales en el Perú?", "esperado": [{"fuente": "LPDP", "articulos": ["15"]}, {"fuente": "RLPDP"}]}
+{"id": 16, "pregunta": "¿Qué derechos tiene el titular de los datos personales en el Perú?", "esperado": [{"fuente": "LPDP", "articulos": ["18", "19", "20", "21", "22", "23", "24", "25"]}, {"fuente": "RLPDP"}]}

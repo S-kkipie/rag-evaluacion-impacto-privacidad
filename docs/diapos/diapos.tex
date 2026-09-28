@@ -1,0 +1,228 @@
+\documentclass[aspectratio=169,10pt]{beamer}
+\usetheme[progressbar=frametitle,numbering=fraction]{metropolis}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[spanish,es-noshorthands,es-tabla]{babel}
+\usepackage{booktabs}
+\usepackage{tikz}
+\usetikzlibrary{positioning,arrows.meta}
+
+\definecolor{guinda}{HTML}{7A1F2B}
+\definecolor{acento}{HTML}{C8102E}
+\setbeamercolor{frametitle}{bg=guinda}
+\setbeamercolor{progress bar}{fg=acento}
+\setbeamercolor{alerted text}{fg=acento}
+
+\input{metricas}
+
+\title{RAG normativo para la Evaluación de Impacto de Privacidad}
+\subtitle{Avance TIF --- Agente de evaluación de impacto de privacidad}
+\author{Dylan Antonio Zúñiga Huarca \and Jeferson Joao Basurco Casani \and Adrian Issac Mamani Quispe}
+\institute{Auditoría de Sistemas · Escuela Profesional de Ingeniería de Sistemas · UNSA}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{frame}{Problema}
+\begin{columns}[T]
+\column{.55\textwidth}
+\begin{itemize}
+  \item La \alert{EIPD / PIA} evalúa los riesgos de un tratamiento de datos \emph{antes} de ejecutarlo.
+  \item El auditor debe cruzar la ley, el reglamento, el derecho comparado y las guías metodológicas: \alert{cientos de páginas}.
+  \item Un LLM ``a secas'' \alert{alucina} artículos y plazos, algo inaceptable en una auditoría.
+\end{itemize}
+\column{.42\textwidth}
+\begin{block}{Contexto peruano}
+\small El nuevo Reglamento de la Ley 29733 (\textbf{D.S. 016-2024-JUS}) incorpora la EIPD en su \textbf{art. 40}, y su \textbf{art. 125} la considera atenuante de sanciones.
+\end{block}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Objetivo del TIF y alcance de este avance}
+\begin{center}
+\begin{tikzpicture}[node distance=6mm,
+  b/.style={draw,rounded corners,minimum height=9mm,text width=24mm,align=center,font=\small},
+  on/.style={b,fill=acento!15,draw=acento,thick}, ar/.style={-Stealth,thick}]
+\node[b] (a) {Descripción del tratamiento};
+\node[b,right=of a] (b) {Tamizaje: ¿requiere EIPD?};
+\node[b,right=of b] (c) {Riesgos\\prob. × impacto};
+\node[b,right=of c] (d) {Medidas e informe EIPD};
+\node[on,below=10mm of b, xshift=17mm, text width=40mm] (r) {\textbf{RAG normativo}\\(este avance)};
+\draw[ar] (a)--(b); \draw[ar] (b)--(c); \draw[ar] (c)--(d);
+\foreach \n in {b,c,d} \draw[ar,acento,dashed] (r) -- (\n);
+\end{tikzpicture}
+\end{center}
+\small El agente completo se presenta en la unidad 3. Hoy entregamos su \alert{base de conocimiento}: responde con citas a la fuente, el artículo y la página.
+\end{frame}
+
+\begin{frame}{EIPD: Perú frente a la Unión Europea}
+\small
+\begin{tabular}{@{}p{.2\textwidth}p{.37\textwidth}p{.37\textwidth}@{}}
+\toprule
+ & \textbf{Perú (LPDP + RLPDP)} & \textbf{UE (RGPD)} \\
+\midrule
+Carácter & Facultativa (art. 40.1) & Obligatoria si hay alto riesgo (art. 35) \\
+Supuestos & Datos sensibles, perfilamiento, personas vulnerables, grandes volúmenes & Perfilamiento con efectos jurídicos, datos sensibles a gran escala, vigilancia sistemática \\
+Referencia & NTP-ISO/IEC 27005, NTP-ISO 31000 & WP248 (9 criterios), ISO/IEC 29134 \\
+Incentivo & Atenuante de sanción (art. 125.4) & Consulta previa a la autoridad (art. 36) \\
+\bottomrule
+\end{tabular}
+\end{frame}
+
+\begin{frame}{¿Qué es RAG?}
+\begin{columns}[c]
+\column{.5\textwidth}
+\textbf{R}etrieval-\textbf{A}ugmented \textbf{G}eneration (Lewis et al., 2020):
+\begin{enumerate}
+  \item \alert{Recuperar} los fragmentos relevantes de un corpus verificable.
+  \item \alert{Aumentar} el prompt con esos fragmentos.
+  \item \alert{Generar} una respuesta fundamentada y citada.
+\end{enumerate}
+\column{.45\textwidth}
+\begin{block}{¿Por qué RAG y no fine-tuning?}
+\small
+\begin{itemize}
+  \item Las normas cambian: basta con re-indexar.
+  \item Trazabilidad: cada afirmación lleva su cita.
+  \item Costo cero con el plan gratuito de Gemini.
+\end{itemize}
+\end{block}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Arquitectura}
+\centering
+\begin{tikzpicture}[node distance=5mm and 5mm,
+  box/.style={draw,rounded corners=2pt,align=center,font=\footnotesize,minimum height=10mm,text width=24mm,fill=white},
+  db/.style={box,fill=guinda!10}, llm/.style={box,fill=acento!12}, ar/.style={-Stealth,thick}]
+\node[box] (pdf) {6 PDFs\\normativos};
+\node[box,right=of pdf] (clean) {Extracción y limpieza (pypdf)};
+\node[box,right=of clean] (chunk) {Fragmentos por artículo\\1200/200 car.};
+\node[db,right=of chunk] (vec) {ChromaDB\\coseno · 768 d};
+\node[box,below=12mm of pdf] (q) {Pregunta del auditor};
+\node[llm,right=of q] (emb) {gemini-embedding-001};
+\node[box,right=of emb] (mmr) {MMR\\k=6 de 24};
+\node[llm,right=of mmr] (gen) {gemini-2.5-flash\\+ prompt citado};
+\draw[ar] (pdf)--(clean); \draw[ar] (clean)--(chunk); \draw[ar] (chunk)--(vec);
+\draw[ar] (q)--(emb); \draw[ar] (emb)--(mmr); \draw[ar] (vec)--(mmr); \draw[ar] (mmr)--(gen);
+\node[font=\scriptsize,above=1mm of clean] {\textit{Ingesta (fuera de línea)}};
+\node[font=\scriptsize,below=1mm of emb] {\textit{Consulta (en línea)}};
+\end{tikzpicture}
+
+\vspace{3mm}\small Python 3.12 · LangChain · ChromaDB · API de Gemini · Streamlit (demo)
+\end{frame}
+
+\begin{frame}{Corpus: \NumPaginas{} páginas, \NumFragmentos{} fragmentos}
+\centering\small
+\begin{tabular}{@{}llrr@{}}
+\toprule
+Sigla & Documento (jurisdicción) & Págs. & Frag. \\
+\midrule
+\TablaCorpus
+\bottomrule
+\end{tabular}
+\end{frame}
+
+\begin{frame}[fragile]{Fragmentación consciente de la norma}
+\begin{columns}[T]
+\column{.5\textwidth}
+\begin{itemize}\small
+  \item Los separadores priorizan \texttt{TÍTULO} → \texttt{CAPÍTULO} → \texttt{Artículo}.
+  \item Se corrigen artefactos del PDF (``modifi catoria'', guiones de corte).
+  \item Cada fragmento lleva sus metadatos: fuente, \alert{artículo}, \alert{página} y jurisdicción.
+  \item Esto permite filtrar por jurisdicción (p. ej., solo Perú).
+\end{itemize}
+\column{.47\textwidth}
+\begin{block}{Metadatos de un fragmento}
+\scriptsize
+\begin{verbatim}
+{ "fuente": "RLPDP",
+  "articulo": "40",
+  "pagina": 24,
+  "jurisdiccion": "Perú",
+  "tipo": "norma" }
+\end{verbatim}
+\end{block}
+\small Cita resultante: \alert{[RLPDP, art. 40, p. 24]}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Recuperación con MMR y prompt fundamentado}
+\begin{columns}[T]
+\column{.5\textwidth}
+\textbf{Maximal Marginal Relevance}
+{\small\[
+d^{*}=\arg\max_{d_i}\Big[\lambda\,\mathrm{sim}(d_i,q)-(1-\lambda)\max_{d_j\in S}\mathrm{sim}(d_i,d_j)\Big]
+\]}
+\small Con $\lambda=0{,}6$ equilibra relevancia y diversidad: evita traer 6 trozos del mismo artículo.
+\column{.47\textwidth}
+\textbf{Reglas del prompt}
+\begin{enumerate}\small
+  \item Responder solo con los fragmentos.
+  \item Citar cada afirmación con [n].
+  \item Si falta información, decirlo.
+  \item Separar la norma peruana vinculante del derecho comparado.
+\end{enumerate}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Resultados de recuperación (\NumPreguntas{} preguntas, k = 6)}
+\centering
+\begin{tabular}{@{}lccccc@{}}
+\toprule
+Estrategia & Hit@6 & MRR & P@6 & Fuentes dist. & Lat. (s) \\
+\midrule
+Similitud & \HitSim & \MrrSim & \PSim & \DivSim & \LatSim \\
+MMR & \HitMMR & \MrrMMR & \PMMR & \DivMMR & \LatMMR \\
+\bottomrule
+\end{tabular}
+
+\vspace{5mm}
+\begin{itemize}\small
+  \item Generación: el \alert{\PctCitas} de las respuestas incluye citas; la latencia media es de \LatGen{} s.
+  \item MMR diversifica las fuentes: aporta contexto comparado y cuesta algo de precisión.
+  \item Primera iteración: Hit@6 = 0,938 y MRR = 0,818. Tras etiquetar los considerandos del RGPD y refinar la anotación se llega al techo, así que hace falta un conjunto más amplio y difícil.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Demostración: ¿es obligatoria la EIPD en el Perú?}
+\small
+\begin{block}{Respuesta del RAG}
+En Perú, la EIPD es de carácter \textbf{facultativo} [2]. El titular del banco de datos \emph{puede} realizarla de manera previa al tratamiento, especialmente con datos sensibles, perfilamiento, personas vulnerables o grandes volúmenes [1]. Puede elaborarse tomando como referencia la NTP-ISO/IEC 27005 y la NTP-ISO 31000 [1].
+\end{block}
+\textbf{Fuentes:} [1] RLPDP, art. 40, p. 25 · [2] RLPDP, art. 40, p. 24 · \ldots
+
+\vspace{2mm}
+\normalsize\texttt{uv run streamlit run app.py} $\rightarrow$ demo en vivo
+\end{frame}
+
+\begin{frame}{Limitaciones y siguiente unidad}
+\begin{columns}[T]
+\column{.48\textwidth}
+\textbf{Limitaciones}
+\begin{itemize}\small
+  \item Conjunto de evaluación pequeño: métricas indicativas.
+  \item Tablas y columnas de los PDF pierden estructura.
+  \item Las normas ISO/NTP no se incluyen por derechos de autor.
+  \item Es un apoyo, no una asesoría legal.
+\end{itemize}
+\column{.48\textwidth}
+\textbf{Unidad 3: agente completo}
+\begin{itemize}\small
+  \item Cuestionario del tratamiento.
+  \item Tamizaje (WP248, art. 35 del RGPD, art. 40 del RLPDP).
+  \item Matriz de riesgos (probabilidad × impacto).
+  \item Informe EIPD automático con trazabilidad.
+\end{itemize}
+\end{columns}
+\end{frame}
+
+\begin{frame}[standout]
+¿Preguntas?
+
+\vspace{4mm}\small Código, informe IEEE y evaluación disponibles en el repositorio
+\end{frame}
+
+\end{document}

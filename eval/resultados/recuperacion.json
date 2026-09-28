@@ -1,0 +1,500 @@
+{
+  "resumen": {
+    "similitud": {
+      "hit@6": 1.0,
+      "mrr": 1.0,
+      "p@6": 0.7291666666666666,
+      "fuentes_distintas_prom": 1.9375,
+      "latencia_prom_s": 0.7135938837418507
+    },
+    "mmr": {
+      "hit@6": 1.0,
+      "mrr": 1.0,
+      "p@6": 0.625,
+      "fuentes_distintas_prom": 2.1875,
+      "latencia_prom_s": 0.6122788304346614
+    }
+  },
+  "detalle": [
+    {
+      "estrategia": "similitud",
+      "id": 1,
+      "hit": true,
+      "rr": 1.0,
+      "precision": 0.3333333333333333,
+      "fuentes": [
+        "RGPD:c91",
+        "AEPD:c-",
+        "RGPD:c90",
+        "AEPD:c-",
+        "AEPD:c-",
+        "RGPD:c92"
+      ]
+    },
+    {
+      "estrategia": "similitud",
+      "id": 2,
+      "hit": true,
+      "rr": 1.0,
+      "precision": 1.0,
+      "fuentes": [
+        "RGPD:35",
+        "WP248:c-",
+        "AEPD:c-",
+        "AEPD:c-",
+        "AEPD:c-",
+        "AEPD:c-"
+      ]
+    },
+    {
+      "estrategia": "similitud",
+      "id": 3,
+      "hit": true,
+      "rr": 1.0,
+      "precision": 0.3333333333333333,
+      "fuentes": [
+        "RLPDP:40",
+        "AEPD:c-",
+        "RLPDP:40",
+        "AEPD:c-",
+        "AEPD:c-",
+        "RLPDP:19"
+      ]
+    },
+    {
+      "estrategia": "similitud",
+      "id": 4,
+      "hit": true,
+      "rr": 1.0,
+      "precision": 0.3333333333333333,
+      "fuentes": [
+        "RLPDP:40",
+        "RLPDP:19",
+        "AEPD:c-",
+        "WP248:c-",
+        "RLPDP:40",
+        "AEPD:c-"
+      ]
+    },
+    {
+      "estrategia": "similitud",
+      "id": 5,
+      "hit": true,
+      "rr": 1.0,
+      "precision": 0.8333333333333334,
+      "fuentes": [
+        "RGPD:c95",
+        "RGPD:c94",
+        "AEPD:c-",
+        "RGPD:36",
+        "RGPD:36",
+        "RGPD:36"
+      ]
+    },
+    {
+      "estrategia": "similitud",
+      "id": 6,
+      "hit": true,
+      "rr": 1.0,
+      "precision": 0.3333333333333333,
+      "fuentes": [
+        "LPDP:2",
+        "AEPD:c-",
+        "RLPDP:III",
+        "LPDP:13",
+        "AEPD:c-",
+        "LPDP:40"
+      ]
+    },
+    {
+      "estrategia": "similitud",
+      "id": 7,
+      "hit": true,
+      "rr": 1.0,
+      "precision": 1.0,
+      "fuentes": [
+        "LPDP:7",
+        "RLPDP:IX",
+        "LPDP:4",
+        "RLPDP:c-",
+        "LPDP:10",
+        "LPDP:12"
+      ]
+    },
+    {
+      "estrategia": "similitud",
+      "id": 8,
+      "hit": true,
+      "rr": 1.0,
+      "precision": 0.16666666666666666,
+      "fuentes": [
+        "RLPDP:125",
+        "RLPDP:19",
+        "AEPD:c-",
+        "AEPD:c-",
+        "RLPDP:40",
+        "RLPDP:123"
+      ]
+    },
+    {
+      "estrategia": "similitud",
+      "id": 9,
+      "hit": true,
+      "rr": 1.0,
+      "precision": 1.0,
+      "fuentes": [
+        "AEPD:c-",
+        "AEPD:c-",
+        "AEPD:c-",
+        "AEPD:c-",
+        "AEPD:c-",
+        "AEPD:c-"
+      ]
+    },
+    {
+      "estrategia": "similitud",
+      "id": 10,
+      "hit": true,
+      "rr": 1.0,
+      "precision": 0.8333333333333334,
+      "fuentes": [
+        "AEPD:c-",
+        "RGPD:25",
+        "RGPD:c78",
+        "RGPD:c79",
+        "AEPD:c-",
+        "RGPD:25"
+      ]
+    },
+    {
+      "estrategia": "similitud",
+      "id": 11,
+      "hit": true,
+      "rr": 1.0,
+      "precision": 0.8333333333333334,
+      "fuentes": [
+        "LPDP:16",
+        "LPDP:7",
+        "RLPDP:52",
+        "RLPDP:VII",
+        "RLPDP:46",
+        "RLPDP:VI"
+      ]
+    },
+    {
+      "estrategia": "similitud",
+      "id": 12,
+      "hit": true,
+      "rr": 1.0,
+      "precision": 0.8333333333333334,
+      "fuentes": [
+        "RGPD:c86",
+        "RGPD:33",
+        "RGPD:c88",
+        "RGPD:33",
+        "RGPD:c87",
+        "RGPD:34"
+      ]
+    },
+    {
+      "estrategia": "similitud",
+      "id": 13,
+      "hit": true,
+      "rr": 1.0,
+      "precision": 1.0,
+      "fuentes": [
+        "NIST-PF:c-",
+        "NIST-PF:c-",
+        "NIST-PF:c-",
+        "NIST-PF:c-",
+        "NIST-PF:c-",
+        "NIST-PF:c-"
+      ]
+    },
+    {
+      "estrategia": "similitud",
+      "id": 14,
+      "hit": true,
+      "rr": 1.0,
+      "precision": 1.0,
+      "fuentes": [
+        "AEPD:c-",
+        "AEPD:c-",
+        "AEPD:c-",
+        "AEPD:c-",
+        "AEPD:c-",
+        "AEPD:c-"
+      ]
+    },
+    {
+      "estrategia": "similitud",
+      "id": 15,
+      "hit": true,
+      "rr": 1.0,
+      "precision": 1.0,
+      "fuentes": [
+        "LPDP:15",
+        "RLPDP:18",
+        "RLPDP:21",
+        "RLPDP:VI",
+        "RLPDP:19",
+        "LPDP:15"
+      ]
+    },
+    {
+      "estrategia": "similitud",
+      "id": 16,
+      "hit": true,
+      "rr": 1.0,
+      "precision": 0.8333333333333334,
+      "fuentes": [
+        "LPDP:25",
+        "LPDP:17",
+        "RLPDP:60",
+        "LPDP:19",
+        "LPDP:20",
+        "RLPDP:75"
+      ]
+    },
+    {
+      "estrategia": "mmr",
+      "id": 1,
+      "hit": true,
+      "rr": 1.0,
+      "precision": 0.5,
+      "fuentes": [
+        "RGPD:c91",
+        "AEPD:c-",
+        "RGPD:c90",
+        "AEPD:c-",
+        "RGPD:c92",
+        "WP248:c-"
+      ]
+    },
+    {
+      "estrategia": "mmr",
+      "id": 2,
+      "hit": true,
+      "rr": 1.0,
+      "precision": 1.0,
+      "fuentes": [
+        "RGPD:35",
+        "WP248:c-",
+        "AEPD:c-",
+        "AEPD:c-",
+        "AEPD:c-",
+        "AEPD:c-"
+      ]
+    },
+    {
+      "estrategia": "mmr",
+      "id": 3,
+      "hit": true,
+      "rr": 1.0,
+      "precision": 0.3333333333333333,
+      "fuentes": [
+        "RLPDP:40",
+        "RLPDP:40",
+        "RLPDP:19",
+        "AEPD:c-",
+        "AEPD:c-",
+        "RLPDP:135"
+      ]
+    },
+    {
+      "estrategia": "mmr",
+      "id": 4,
+      "hit": true,
+      "rr": 1.0,
+      "precision": 0.16666666666666666,
+      "fuentes": [
+        "RLPDP:40",
+        "AEPD:c-",
+        "WP248:c-",
+        "AEPD:c-",
+        "RGPD:5",
+        "RLPDP:c-"
+      ]
+    },
+    {
+      "estrategia": "mmr",
+      "id": 5,
+      "hit": true,
+      "rr": 1.0,
+      "precision": 0.16666666666666666,
+      "fuentes": [
+        "RGPD:c95",
+        "AEPD:c-",
+        "AEPD:c-",
+        "AEPD:c-",
+        "AEPD:c-",
+        "RGPD:56"
+      ]
+    },
+    {
+      "estrategia": "mmr",
+      "id": 6,
+      "hit": true,
+      "rr": 1.0,
+      "precision": 0.16666666666666666,
+      "fuentes": [
+        "LPDP:2",
+        "AEPD:c-",
+        "LPDP:40",
+        "LPDP:40",
+        "RLPDP:134",
+        "RLPDP:135"
+      ]
+    },
+    {
+      "estrategia": "mmr",
+      "id": 7,
+      "hit": true,
+      "rr": 1.0,
+      "precision": 0.8333333333333334,
+      "fuentes": [
+        "LPDP:7",
+        "RLPDP:IX",
+        "LPDP:4",
+        "RLPDP:c-",
+        "LPDP:13",
+        "RLPDP:VI"
+      ]
+    },
+    {
+      "estrategia": "mmr",
+      "id": 8,
+      "hit": true,
+      "rr": 1.0,
+      "precision": 0.16666666666666666,
+      "fuentes": [
+        "RLPDP:125",
+        "RLPDP:19",
+        "AEPD:c-",
+        "RLPDP:40",
+        "RLPDP:123",
+        "AEPD:c-"
+      ]
+    },
+    {
+      "estrategia": "mmr",
+      "id": 9,
+      "hit": true,
+      "rr": 1.0,
+      "precision": 1.0,
+      "fuentes": [
+        "AEPD:c-",
+        "AEPD:c-",
+        "AEPD:c-",
+        "AEPD:c-",
+        "AEPD:c-",
+        "AEPD:c-"
+      ]
+    },
+    {
+      "estrategia": "mmr",
+      "id": 10,
+      "hit": true,
+      "rr": 1.0,
+      "precision": 0.6666666666666666,
+      "fuentes": [
+        "AEPD:c-",
+        "RGPD:25",
+        "RGPD:c79",
+        "AEPD:c-",
+        "AEPD:c-",
+        "NIST-PF:c-"
+      ]
+    },
+    {
+      "estrategia": "mmr",
+      "id": 11,
+      "hit": true,
+      "rr": 1.0,
+      "precision": 0.8333333333333334,
+      "fuentes": [
+        "LPDP:16",
+        "RLPDP:52",
+        "RLPDP:48",
+        "RLPDP:46",
+        "RLPDP:VI",
+        "LPDP:27"
+      ]
+    },
+    {
+      "estrategia": "mmr",
+      "id": 12,
+      "hit": true,
+      "rr": 1.0,
+      "precision": 0.5,
+      "fuentes": [
+        "RGPD:c86",
+        "RGPD:33",
+        "RGPD:c88",
+        "RGPD:36",
+        "RGPD:66",
+        "RGPD:51"
+      ]
+    },
+    {
+      "estrategia": "mmr",
+      "id": 13,
+      "hit": true,
+      "rr": 1.0,
+      "precision": 1.0,
+      "fuentes": [
+        "NIST-PF:c-",
+        "NIST-PF:c-",
+        "NIST-PF:c-",
+        "NIST-PF:c-",
+        "NIST-PF:c-",
+        "NIST-PF:c-"
+      ]
+    },
+    {
+      "estrategia": "mmr",
+      "id": 14,
+      "hit": true,
+      "rr": 1.0,
+      "precision": 1.0,
+      "fuentes": [
+        "AEPD:c-",
+        "AEPD:c-",
+        "AEPD:c-",
+        "AEPD:c-",
+        "NIST-PF:c-",
+        "AEPD:c-"
+      ]
+    },
+    {
+      "estrategia": "mmr",
+      "id": 15,
+      "hit": true,
+      "rr": 1.0,
+      "precision": 1.0,
+      "fuentes": [
+        "LPDP:15",
+        "RLPDP:18",
+        "RLPDP:21",
+        "RLPDP:VI",
+        "RLPDP:19",
+        "RLPDP:34"
+      ]
+    },
+    {
+      "estrategia": "mmr",
+      "id": 16,
+      "hit": true,
+      "rr": 1.0,
+      "precision": 0.6666666666666666,
+      "fuentes": [
+        "LPDP:25",
+        "LPDP:17",
+        "RLPDP:63",
+        "LPDP:13",
+        "RLPDP:VI",
+        "RLPDP:135"
+      ]
+    }
+  ]
+}

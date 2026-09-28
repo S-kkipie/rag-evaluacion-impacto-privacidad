@@ -1,0 +1,9 @@
+En Perú, la Evaluación de Impacto relativa a la Protección de Datos Personales (EIPD) es de carácter facultativo [2].
+El titular del banco de datos o responsable del tratamiento puede realizarla de manera opcional y previa al tratamiento de datos personales [2].
+Se recomienda realizarla especialmente en los siguientes casos [1]:
+- Cuando se trate de datos sensibles [1].
+- Cuando se utilicen datos con fines de crear perfiles personales [1].
+- Cuando se traten datos de personas en especial situación de vulnerabilidad, como niños, niñas y adolescentes, personas pertenecientes a pueblos indígenas en situación de aislamiento y/o contacto inicial, o personas con discapacidad [1].
+- Cuando se realice tratamiento de grandes volúmenes de datos [1].
+- En otros supuestos determinados por la Autoridad Nacional de Protección de Datos Personales [1].
+Para su elaboración, se pueden tomar como referencia la guía, lineamientos y procedimientos establecidos en la NTP-ISO/IEC 27005 y la NTP-ISO 31000 en su edición vigente, u otros estándares relacionados con el análisis y la evaluación de riesgos para la protección de datos personales [1]. La Autoridad Nacional de Protección de Datos Personales emitirá las disposiciones complementarias pertinentes para su realización [1].

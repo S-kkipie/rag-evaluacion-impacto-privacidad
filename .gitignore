@@ -1,0 +1,15 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+data/chroma/
+docs/**/*.aux
+docs/**/*.log
+docs/**/*.out
+docs/**/*.bbl
+docs/**/*.blg
+docs/**/*.nav
+docs/**/*.snm
+docs/**/*.toc
+docs/**/*.vrb

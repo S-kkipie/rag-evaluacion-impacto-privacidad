@@ -1,0 +1,322 @@
+\documentclass[aspectratio=169,11pt]{beamer}
+\usetheme[progressbar=frametitle,numbering=fraction]{metropolis}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[spanish,es-noshorthands,es-tabla]{babel}
+\usepackage{booktabs}
+\usepackage{tikz}
+\usetikzlibrary{positioning,arrows.meta}
+
+\definecolor{guinda}{HTML}{7A1F2B}
+\definecolor{acento}{HTML}{C8102E}
+\definecolor{verde}{HTML}{2E7D32}
+\setbeamercolor{frametitle}{bg=guinda}
+\setbeamercolor{progress bar}{fg=acento}
+\setbeamercolor{alerted text}{fg=acento}
+\setbeamercolor{block title}{bg=guinda!12,fg=guinda}
+\setbeamercolor{block body}{bg=guinda!4}
+
+\newcommand{\fuente}[1]{\par\vfill\hfill{\tiny\color{gray}Fuente: #1}}
+
+\title{Tus datos, tus derechos}
+\subtitle{Ley N.º 29733 de Protección de Datos Personales y su Reglamento vigente (D.S. N.º 016-2024-JUS)}
+\author{Dylan Antonio Zúñiga Huarca \and Jeferson Joao Basurco Casani \and Adrian Issac Mamani Quispe}
+\institute{Responsabilidad Social Universitaria · Auditoría de Sistemas · Escuela Profesional de Ingeniería de Sistemas · UNSA}
+\date{Primer avance}
+
+\begin{document}
+\maketitle
+
+%---------------------------------------------------------------
+\begin{frame}{¿Por qué debería importarte?}
+\begin{columns}[T]
+\column{.5\textwidth}
+Todos los días entregamos datos personales:
+\begin{itemize}
+  \item Das tu \alert{DNI} en una tienda o en una farmacia.
+  \item Te registras en una \alert{app} o en una red wifi pública.
+  \item Recibes \alert{llamadas o SMS publicitarios} que nunca autorizaste.
+  \item Te toman la \alert{huella o una foto} para entrar a un edificio.
+\end{itemize}
+\column{.45\textwidth}
+\begin{block}{La pregunta clave}
+¿Quién tiene tus datos, para qué los usa y cómo puedes controlarlo?
+\end{block}
+\vspace{2mm}
+\small La ley peruana te da \textbf{derechos} y a las empresas e instituciones les impone \textbf{obligaciones}.
+\end{columns}
+\end{frame}
+
+%---------------------------------------------------------------
+\begin{frame}{Marco normativo}
+\begin{center}
+\begin{tikzpicture}[node distance=5mm,
+  b/.style={draw=guinda,rounded corners,thick,fill=guinda!6,text width=30mm,align=center,minimum height=16mm,font=\small},
+  ar/.style={-Stealth,thick,guinda}]
+\node[b] (c) {\textbf{Constitución}\\art. 2, inciso 6};
+\node[b,right=of c] (l) {\textbf{Ley N.º 29733}\\(2011)};
+\node[b,right=of l] (r) {\textbf{D.S. 016-2024-JUS}\\nuevo Reglamento};
+\node[b,right=of r,fill=acento!10,draw=acento] (a) {\textbf{ANPD}\\Autoridad Nacional (MINJUSDH)};
+\draw[ar] (c)--(l); \draw[ar] (l)--(r); \draw[ar] (r)--(a);
+\end{tikzpicture}
+\end{center}
+\begin{itemize}\small
+  \item El Reglamento se publicó el \textbf{30 de noviembre de 2024} y entró en vigencia a los \textbf{120 días calendario}, el \textbf{30 de marzo de 2025}.
+  \item \alert{Deroga} el reglamento anterior (D.S. 003-2013-JUS) y se enfoca en el \textbf{entorno digital}.
+  \item El Ministerio de Justicia y Derechos Humanos ejerce como Autoridad Nacional de Protección de Datos Personales (Ley, art. 32).
+\end{itemize}
+\fuente{Ley N.º 29733, art. 32; D.S. N.º 016-2024-JUS, Disp. Compl. Derogatoria Única y Primera Disp. Compl. Final}
+\end{frame}
+
+%---------------------------------------------------------------
+\begin{frame}{Conceptos clave}
+\begin{columns}[T]
+\column{.48\textwidth}
+\begin{block}{Dato personal}
+Toda información que \textbf{identifica o hace identificable} a una persona: nombre, DNI, dirección, correo, fotografía, etc.
+\end{block}
+\begin{block}{Titular del dato}
+\textbf{Tú}: la persona a quien pertenecen los datos.
+\end{block}
+\column{.48\textwidth}
+\begin{block}{Dato sensible (más protegido)}
+\small Datos biométricos, origen racial y étnico, ingresos económicos, opiniones o convicciones políticas, religiosas, filosóficas o morales, afiliación sindical, e información de \textbf{salud} o \textbf{vida sexual}.
+\end{block}
+\begin{block}{Titular del banco / responsable}
+\small La empresa o entidad que decide \textbf{para qué} y \textbf{cómo} se usan tus datos.
+\end{block}
+\end{columns}
+\fuente{Ley N.º 29733, art. 2}
+\end{frame}
+
+%---------------------------------------------------------------
+\begin{frame}{Los 8 principios de la ley}
+\centering\small
+\begin{tabular}{@{}rll@{}}
+\toprule
+Art. & Principio & En palabras simples \\
+\midrule
+4 & Legalidad & Solo se tratan datos por medios lícitos. \\
+5 & \alert{Consentimiento} & Se necesita tu autorización. \\
+6 & Finalidad & Los datos se usan solo para el fin que te informaron. \\
+7 & Proporcionalidad & Se piden solo los datos necesarios. \\
+8 & Calidad & Los datos deben ser veraces y estar actualizados. \\
+9 & \alert{Seguridad} & Deben protegerse contra pérdidas y accesos indebidos. \\
+10 & Disposición de recurso & Siempre tienes una vía para reclamar. \\
+11 & Nivel de protección adecuado & Si tus datos salen del país, deben seguir protegidos. \\
+\bottomrule
+\end{tabular}
+\fuente{Ley N.º 29733, arts. 4--11}
+\end{frame}
+
+%---------------------------------------------------------------
+\begin{frame}{El consentimiento válido}
+\begin{center}
+\begin{tikzpicture}[node distance=4mm,
+  c/.style={circle,draw=guinda,very thick,fill=guinda!8,minimum size=22mm,align=center,font=\small\bfseries}]
+\node[c] (a) {Libre};
+\node[c,right=of a] (b) {Previo};
+\node[c,right=of b] (c) {Expreso e\\inequívoco};
+\node[c,right=of c] (d) {Informado};
+\end{tikzpicture}
+\end{center}
+\begin{itemize}\small
+  \item \textbf{Libre:} sin error, mala fe, violencia ni engaño.
+  \item \textbf{Previo:} se otorga \emph{antes} de recopilar o usar los datos.
+  \item \textbf{Expreso:} requiere una acción clara de aceptación; puede ser verbal, escrito o digital (clic, casilla).
+  \item \textbf{Informado:} te explican quién usará tus datos, para qué y cómo ejercer tus derechos.
+\end{itemize}
+\fuente{Ley N.º 29733, art. 5; D.S. 016-2024-JUS, arts. 2--5 (características del consentimiento)}
+\end{frame}
+
+%---------------------------------------------------------------
+\begin{frame}{Tus derechos}
+\begin{columns}[T]
+\column{.5\textwidth}
+\small
+\begin{itemize}
+  \item \textbf{Información} (art. 18): saber quién tiene tus datos y para qué.
+  \item \textbf{Acceso} (art. 19): obtener una copia de tus datos.
+  \item \textbf{Rectificación, actualización, inclusión y supresión} (art. 20).
+  \item \textbf{Impedir el suministro} de tus datos a terceros (art. 21).
+  \item \textbf{Oposición} (art. 22).
+\end{itemize}
+\column{.47\textwidth}
+\small
+\begin{itemize}
+  \item \textbf{Tratamiento objetivo} (art. 23): que no decidan sobre ti \emph{solo} de forma automatizada.
+  \item \textbf{Tutela} (art. 24): reclamar ante la ANPD o el Poder Judicial (hábeas data).
+  \item \textbf{Indemnización} (art. 25).
+  \item \alert{Nuevo: portabilidad} (Reglamento, art. 76): llevar tus datos de una empresa a otra.
+\end{itemize}
+\end{columns}
+\fuente{Ley N.º 29733, arts. 18--25; D.S. 016-2024-JUS, art. 76}
+\end{frame}
+
+%---------------------------------------------------------------
+\begin{frame}{¿Cuánto deben tardar en responderte?}
+\begin{center}
+\begin{tikzpicture}
+\foreach \y/\lab/\d/\c in {0/Información/8/verde, -1.1/{Rectificación, cancelación u oposición}/10/guinda, -2.2/Acceso/20/acento}{
+  \node[anchor=east,font=\small] at (-.2,\y) {\lab};
+  \fill[\c!80] (0,\y-.3) rectangle (\d*0.3,\y+.3);
+  \node[anchor=west,font=\small\bfseries] at (\d*0.3+.1,\y) {\d{} días};
+}
+\end{tikzpicture}
+\end{center}
+\small El plazo se cuenta desde el día siguiente a la presentación de tu solicitud. Si no te responden o te niegan el derecho, puedes acudir a la \alert{ANPD}.
+\fuente{D.S. 016-2024-JUS, art. 69; Ley N.º 29733, art. 24}
+\end{frame}
+
+%---------------------------------------------------------------
+\begin{frame}{¿Qué trae de nuevo el Reglamento 2024?}
+\small
+\begin{columns}[T]
+\column{.49\textwidth}
+\begin{block}{Incidentes de seguridad}
+Si un incidente expone \textbf{grandes volúmenes} de datos o \textbf{datos sensibles}, o causa un perjuicio evidente, el responsable debe notificarlo a la ANPD en un máximo de \textbf{48 horas} e informar a los afectados en un lenguaje sencillo (art. 34).
+\end{block}
+\begin{block}{Menores de edad}
+Los adolescentes de \textbf{14 a 17 años} pueden dar su consentimiento; para los \textbf{menores de 14} se requiere el de sus padres o tutores (arts. 22 y 25).
+\end{block}
+\column{.49\textwidth}
+\begin{block}{Publicidad}
+Para negarte o darte de baja de la publicidad deben ofrecerte un \textbf{medio sencillo y gratuito}, que \textbf{no puede ser más difícil} que aceptar; tu pedido debe atenderse en un plazo máximo de 10 días (art. 26.5).
+\end{block}
+\begin{block}{Evaluación de impacto}
+Es facultativa y recomendada para datos sensibles, perfilamiento o grandes volúmenes (art. 40).
+\end{block}
+\end{columns}
+\fuente{D.S. 016-2024-JUS}
+\end{frame}
+
+%---------------------------------------------------------------
+\begin{frame}{Nuevo: el Oficial de Datos Personales}
+\small Es la persona designada para verificar, asesorar e implementar el cumplimiento de la normativa. Es \textbf{obligatorio} en las entidades públicas y en quienes tratan grandes volúmenes de datos o datos sensibles (art. 37). Su exigencia es progresiva:
+
+\vspace{2mm}
+\centering
+\begin{tabular}{@{}lll@{}}
+\toprule
+Tipo de empresa & Ventas anuales & Obligatorio desde \\
+\midrule
+Grandes & $>$ 2300 UIT & 30 nov. 2025 \\
+Medianas & $>$ 1700 hasta 2300 UIT & 30 nov. 2026 \\
+Pequeñas & $>$ 150 hasta 1700 UIT & 30 nov. 2027 \\
+Microempresas & hasta 150 UIT & 30 nov. 2028 \\
+\bottomrule
+\end{tabular}
+\fuente{D.S. 016-2024-JUS, art. 37 y Primera Disp. Compl. Final (plazos contados desde su publicación, el 30/11/2024)}
+\end{frame}
+
+%---------------------------------------------------------------
+\begin{frame}{Obligaciones de empresas e instituciones}
+\begin{columns}[T]
+\column{.5\textwidth}
+\small
+\begin{itemize}
+  \item[\color{verde}$\checkmark$] Obtener un \textbf{consentimiento válido}.
+  \item[\color{verde}$\checkmark$] Informar sus fines con una \textbf{política de privacidad} clara.
+  \item[\color{verde}$\checkmark$] \textbf{Inscribir sus bancos de datos} en el Registro Nacional (art. 44).
+  \item[\color{verde}$\checkmark$] Adoptar \textbf{medidas de seguridad}.
+\end{itemize}
+\column{.47\textwidth}
+\small
+\begin{itemize}
+  \item[\color{verde}$\checkmark$] Atender los derechos del titular \textbf{dentro del plazo}.
+  \item[\color{verde}$\checkmark$] Notificar los \textbf{incidentes graves} a la ANPD \textbf{en 48 h}.
+  \item[\color{verde}$\checkmark$] Designar un \textbf{Oficial de Datos} cuando corresponda.
+  \item[\color{verde}$\checkmark$] Comunicar los \textbf{flujos transfronterizos} de datos.
+\end{itemize}
+\end{columns}
+\fuente{Ley N.º 29733; D.S. 016-2024-JUS}
+\end{frame}
+
+%---------------------------------------------------------------
+\begin{frame}{Sanciones}
+\begin{center}
+\begin{tikzpicture}[node distance=6mm,
+  s/.style={rounded corners,minimum width=36mm,minimum height=22mm,align=center,font=\small,text=white}]
+\node[s,fill=verde] (l) {\textbf{Leves}\\[1mm]0,5 a 5 UIT};
+\node[s,fill=orange!85!black,right=of l] (g) {\textbf{Graves}\\[1mm]más de 5 a 50 UIT};
+\node[s,fill=acento,right=of g] (m) {\textbf{Muy graves}\\[1mm]más de 50 a 100 UIT};
+\end{tikzpicture}
+\end{center}
+\small
+\begin{itemize}
+  \item \textbf{Agravante:} la reincidencia (Reglamento, art. 135.3).
+  \item \textbf{Atenuante:} haber implementado, antes del procedimiento sancionador, una evaluación de impacto sobre el tratamiento cuestionado (art. 125.4).
+\end{itemize}
+\fuente{Ley N.º 29733, art. 39; D.S. 016-2024-JUS, arts. 125 y 135}
+\end{frame}
+
+%---------------------------------------------------------------
+\begin{frame}{¿Cómo ejercer tus derechos? Paso a paso}
+\begin{center}
+\begin{tikzpicture}[node distance=7mm,
+  p/.style={draw=guinda,thick,rounded corners,fill=guinda!6,text width=33mm,align=center,minimum height=20mm,font=\small},
+  ar/.style={-Stealth,very thick,guinda}]
+\node[p] (1) {\textbf{1. Solicita}\\por escrito a la empresa o entidad (identifícate y di qué derecho ejerces)};
+\node[p,right=of 1] (2) {\textbf{2. Espera}\\el plazo: 8, 10 o 20 días según el derecho};
+\node[p,right=of 2] (3) {\textbf{3. Reclama}\\ante la ANPD si no responden o te niegan el derecho};
+\draw[ar] (1)--(2); \draw[ar] (2)--(3);
+\end{tikzpicture}
+\end{center}
+\small También puedes acudir al Poder Judicial mediante un \textbf{hábeas data}. Guarda siempre el cargo o la constancia de tu solicitud.
+\fuente{Ley N.º 29733, art. 24; D.S. 016-2024-JUS, art. 69}
+\end{frame}
+
+%---------------------------------------------------------------
+\begin{frame}{Consejos para proteger tus datos}
+\begin{columns}[T]
+\column{.5\textwidth}
+\begin{itemize}\small
+  \item Lee antes de marcar ``acepto''.
+  \item Pregunta \textbf{para qué} te piden tu DNI o tu huella.
+  \item Revisa los permisos de tus apps.
+  \item No compartas fotos de tu DNI por WhatsApp.
+\end{itemize}
+\column{.47\textwidth}
+\begin{itemize}\small
+  \item Ante publicidad no solicitada, ejerce tu derecho de \textbf{oposición}.
+  \item Si una empresa sufre una filtración, cambia tus contraseñas.
+  \item Guarda las evidencias y reclama ante la ANPD.
+\end{itemize}
+\end{columns}
+\end{frame}
+
+%---------------------------------------------------------------
+\begin{frame}{Nuestra acción de RSU}
+\begin{columns}[c]
+\column{.55\textwidth}
+\begin{itemize}\small
+  \item \textbf{Público objetivo:} ciudadanos y mypes de Arequipa.
+  \item \textbf{Primer avance:} estas diapositivas informativas.
+  \item \textbf{Tercera unidad:} un video educativo sobre derechos y obligaciones.
+  \item Vinculado a nuestro TIF: un \textbf{agente de evaluación de impacto de privacidad} basado en IA.
+\end{itemize}
+\column{.4\textwidth}
+\begin{block}{Mensaje central}
+\centering\large Tus datos son \textbf{tuyos}.\\ Conoce la ley y ejerce tus derechos.
+\end{block}
+\end{columns}
+\end{frame}
+
+%---------------------------------------------------------------
+\begin{frame}{Referencias}
+\small
+\begin{itemize}
+  \item Congreso de la República. \emph{Ley N.º 29733, Ley de Protección de Datos Personales}. El Peruano, 2011.
+  \item Ministerio de Justicia y Derechos Humanos. \emph{D.S. N.º 016-2024-JUS, Reglamento de la Ley N.º 29733}. El Peruano, 30/11/2024.
+  \item Autoridad Nacional de Protección de Datos Personales: \texttt{www.gob.pe/institucion/anpd}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[standout]
+¡Gracias!
+
+\vspace{3mm}\small Tus datos, tus derechos.
+\end{frame}
+
+\end{document}

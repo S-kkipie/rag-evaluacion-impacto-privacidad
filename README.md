@@ -11,6 +11,7 @@ normativas y metodológicas sobre la EIPD, siempre con citas a la fuente, el art
 | Evaluación | `eval/` (preguntas y resultados) |
 | Informe (formato IEEE) | `docs/informe/informe.pdf` |
 | Diapositivas | `docs/diapos/diapos.pdf` |
+| **RSU**: diapositivas sobre la Ley 29733 y el D.S. 016-2024-JUS | `rsu/diapos_rsu.pdf` |
 
 ## Arquitectura
 

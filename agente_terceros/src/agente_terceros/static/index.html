@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agente de Terceros · PIMS ISO/IEC 27701</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%231f5f8b'/><text x='16' y='22' font-size='15' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='700'>A7</text></svg>">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <header class="barra">
+    <div class="marca">
+      <span class="sello">A7</span>
+      <div>
+        <h1>Agente de Terceros (DPAs)</h1>
+        <p>PIMS multiagente · ISO/IEC 27701:2025 · A.1.2.7 · A.2.5.7 · A.2.5.8</p>
+      </div>
+    </div>
+    <nav id="nav">
+      <a href="#panel">Panel</a>
+      <a href="#proveedores">Proveedores</a>
+      <a href="#revisar">Revisar DPA</a>
+      <a href="#aprobaciones">Aprobaciones <span id="badge-pend" class="badge" hidden></span></a>
+      <a href="#brecha">Brecha</a>
+      <a href="#consulta">Consulta normativa</a>
+      <a href="#bitacora">Bitácora</a>
+    </nav>
+  </header>
+
+  <main id="vista" aria-live="polite"></main>
+
+  <footer class="pie">
+    Avance TIF · Auditoría de Sistemas · UNSA — RAG con FAISS + embeddings locales (Ollama) · LLM Gemini ·
+    Las decisiones sobre DPAs y subencargados requieren aprobación humana (HITL).
+  </footer>
+
+  <template id="tpl-cargando"><div class="cargando"><span class="spinner"></span> <span class="msg">Cargando…</span></div></template>
+  <script src="/static/app.js"></script>
+</body>
+</html>

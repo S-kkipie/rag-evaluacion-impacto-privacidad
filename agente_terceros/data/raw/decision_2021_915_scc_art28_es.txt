@@ -1,0 +1,829 @@
+7.6.2021   
+
+	
+
+ES
+
+	
+
+Diario Oficial de la Unión Europea
+
+	
+
+L 199/18
+
+DECISIÓN DE EJECUCIÓN (UE) 2021/915 DE LA COMISIÓN
+
+de 4 de junio de 2021
+
+relativa a las cláusulas contractuales tipo entre responsables y encargados del tratamiento contempladas en el artículo 28, apartado 7, del Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo y en el artículo 29, apartado 7, del Reglamento (UE) 2018/1725 del Parlamento Europeo y del Consejo
+
+(Texto pertinente a efectos del EEE)
+
+LA COMISIÓN EUROPEA,
+
+Visto el Tratado de Funcionamiento de la Unión Europea,
+
+Visto el Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo, de 27 de abril de 2016, relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de estos datos y por el que se deroga la Directiva 95/46/CE («RGPD») (1), y en particular su artículo 28, apartado 7,
+
+Visto el Reglamento (UE) 2018/1725 del Parlamento Europeo y del Consejo, de 23 de octubre de 2018, relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales por las instituciones, órganos y organismos de la Unión, y a la libre circulación de esos datos, y por el que se derogan el Reglamento (CE) n.o 45/2001 y la Decisión n.o 1247/2002/CE (2), y en particular su artículo 29, apartado 7,
+
+Considerando lo siguiente:
+
+(1)
+
+	
+
+Los conceptos de responsable y encargado del tratamiento desempeñan un papel crucial en la aplicación del Reglamento (UE) 2016/679 y del Reglamento (UE) 2018/1725. El «responsable del tratamiento» o «responsable» es la persona física o jurídica, autoridad pública, servicio u otro organismo que, solo o junto con otros, determina los fines y medios del tratamiento. A efectos del Reglamento (UE) 2018/1725, se entiende por responsable del tratamiento la institución o el organismo o la dirección general u otra entidad organizativa de la Unión que, por sí sola o conjuntamente con otros, determine los fines y medios del tratamiento de datos personales. Cuando los fines y medios de ese tratamiento se determinen en un acto específico de la Unión, el responsable del tratamiento o los criterios específicos para su nombramiento podrán ser establecidos por la Unión. El «encargado del tratamiento» o «encargado» es la persona física o jurídica, autoridad pública, servicio u otro organismo que trate datos personales por cuenta del responsable del tratamiento.
+
+(2)
+
+	
+
+Debe aplicarse el mismo conjunto de cláusulas contractuales tipo a la relación entre los responsables y los encargados del tratamiento sujetos al Reglamento (UE) 2016/679 y también cuando estén sujetos al Reglamento (UE) 2018/1725. Esto se justifica porque, en aras de un planteamiento coherente de protección de los datos personales en la Unión y de la libre circulación de datos personales en toda la Unión, las normas de protección de datos del Reglamento (UE) 2016/679, aplicables al sector público en los Estados miembros, y las normas de protección de datos del Reglamento (UE) 2018/1725, aplicables a las instituciones, órganos y organismos de la Unión, se armonizaron en la medida de lo posible.
+
+(3)
+
+	
+
+Con el fin de asegurar que se cumplan los requisitos del Reglamento (UE) 2016/679 y el Reglamento (UE) 2018/1725, cuando se encomienden actividades de tratamiento a un encargado, el responsable debe recurrir únicamente a encargados que ofrezcan garantías suficientes, en particular en lo que respecta a conocimientos especializados, fiabilidad y recursos, de cara a la aplicación de medidas técnicas y organizativas que cumplan los requisitos del Reglamento (UE) 2016/679 y del Reglamento (UE) 2018/1725, incluida la seguridad del tratamiento.
+
+(4)
+
+	
+
+El tratamiento por un encargado debe regirse por un contrato u otro acto jurídico con arreglo al Derecho de la Unión o del Estado miembro, que vincule al encargado respecto del responsable y establezca los elementos enumerados en el artículo 28, apartados 3 y 4, del Reglamento (UE) 2016/679 o en el artículo 29, apartados 3 y 4, del Reglamento (UE) 2018/1725. Dicho contrato o acto deberá recogerse por escrito; se puede hacer en formato electrónico.
+
+(5)
+
+	
+
+De conformidad con el artículo 28, apartado 6, del Reglamento (UE) 2016/679 y el artículo 29, apartado 6, del Reglamento (UE) 2018/1725, el responsable y el encargado pueden optar entre, bien negociar un contrato individual que contenga los elementos obligatorios establecidos en el artículo 28, apartados 3 y 4, del Reglamento (UE) 2016/679 o en el artículo 29, apartados 3 y 4, del Reglamento (UE) 2018/1725, respectivamente, bien utilizar, total o parcialmente, las cláusulas contractuales tipo fijadas por la Comisión con arreglo al artículo 28, apartado 7, del Reglamento (UE) 2016/679 y al artículo 29, apartado 7, del Reglamento (UE) 2018/1725.
+
+(6)
+
+	
+
+El responsable y el encargado del tratamiento deben tener discrecionalidad para incluir en un contrato más amplio las cláusulas contractuales tipo establecidas en la presente Decisión, así como para añadir otras cláusulas o garantías adicionales siempre que no contradigan, directa o indirectamente, a las cláusulas contractuales tipo ni perjudiquen los derechos o libertades fundamentales de los interesados. Las obligaciones contractuales que tengan el responsable o el encargado de garantizar el respeto de los privilegios e inmunidades que sean de aplicación en nada se oponen a la utilización de las cláusulas contractuales tipo.
+
+(7)
+
+	
+
+Las cláusulas contractuales tipo deben disponer reglas tanto sustantivas como procedimentales. Además, de conformidad con el artículo 28, apartado 3, del Reglamento (UE) 2016/679 y el artículo 29, apartado 3, del Reglamento (UE) 2018/1725, las cláusulas contractuales tipo deben exigir al responsable y al encargado que establezcan el objeto, la duración, la naturaleza y la finalidad del tratamiento, el tipo de datos personales y categorías de interesados, y las obligaciones y derechos del responsable.
+
+(8)
+
+	
+
+En virtud del artículo 28, apartado 3, del Reglamento (UE) 2016/679 y del artículo 29, apartado 3, del Reglamento (UE) 2018/1725, el encargado debe informar inmediatamente al responsable si, en su opinión, una instrucción del responsable infringe el Reglamento (UE) 2016/679 o el Reglamento (UE) 2018/1725, u otras disposiciones en materia de protección de datos de la Unión o de los Estados miembros.
+
+(9)
+
+	
+
+Cuando un encargado recurra a otro encargado para llevar a cabo actividades específicas, deben aplicarse los requisitos específicos contemplados en el artículo 28, apartados 2 y 4, del Reglamento (UE) 2016/679 o en el artículo 29, apartados 2 y 4, del Reglamento (UE) 2018/1725. En concreto, se requiere una autorización previa general o específica por escrito. Con independencia de que la autorización previa sea general o específica, el encargado primero debe mantener actualizada la lista con el resto de encargados.
+
+(10)
+
+	
+
+Para cumplir los requisitos del artículo 46, apartado 1, del Reglamento (UE) 2016/679, la Comisión adoptó cláusulas contractuales tipo con arreglo al artículo 46, apartado 2, letra c), del Reglamento (UE) 2016/679. Estas cláusulas también cumplen los requisitos del artículo 28, apartados 3 y 4, del Reglamento (UE) 2016/679 en cuanto a las transferencias de datos que realicen responsables sujetos al Reglamento (UE) 2016/679 a encargados que se encuentren fuera del ámbito de aplicación territorial de dicho Reglamento o las que realicen encargados sujetos al Reglamento (UE) 2016/679 a subencargados que se encuentren fuera del ámbito de aplicación territorial de dicho Reglamento. Estas cláusulas contractuales tipo no pueden utilizarse como cláusulas contractuales tipo a efectos del capítulo V del Reglamento (UE) 2016/679.
+
+(11)
+
+	
+
+Los terceros deben poder convertirse en parte en las cláusulas contractuales tipo a lo largo del período de vigencia del contrato.
+
+(12)
+
+	
+
+El funcionamiento de las cláusulas contractuales tipo debe evaluarse como subparte de la evaluación periódica contemplada en el artículo 97 del Reglamento (UE) 2016/679.
+
+(13)
+
+	
+
+El Supervisor Europeo de Protección de Datos y el Comité Europeo de Protección de Datos fueron consultados de conformidad con el artículo 42, apartados 1 y 2, del Reglamento (UE) 2018/1725 y emitieron un dictamen conjunto el 14 de enero de 2021 (3), que se ha tenido en cuenta en la elaboración de la presente Decisión.
+
+(14)
+
+	
+
+Las medidas previstas en la presente Decisión se ajustan al dictamen del comité creado en virtud del artículo 93 del Reglamento (UE) 2016/679 y del artículo 96, apartado 2, del Reglamento (UE) 2018/1725.]
+
+HA ADOPTADO LA PRESENTE DECISIÓN:
+
+Artículo 1
+
+Las cláusulas contractuales tipo que figuran en el anexo cumplen los requisitos aplicables a los contratos entre los responsables y los encargados del tratamiento contemplados en el artículo 28, apartados 3 y 4, del Reglamento (UE) 2016/679 y en el artículo 29, apartados 3 y 4, del Reglamento (UE) 2018/1725.
+
+Artículo 2
+
+Las cláusulas contractuales tipo que figuran en el anexo podrán utilizarse en los contratos entre un responsable y un encargado que trate datos personales por cuenta del responsable.
+
+Artículo 3
+
+La Comisión evaluará la aplicación en la práctica de las cláusulas contractuales tipo que figuran en el anexo basándose en toda la información de que disponga como parte de la evaluación periódica contemplada en el artículo 97 del Reglamento (UE) 2016/679.
+
+Artículo 4
+
+La presente Decisión entrará en vigor a los veinte días de su publicación en el Diario Oficial de la Unión Europea.
+
+Hecho en Bruselas, el 4 de junio de 2021.
+
+Por la Comisión
+
+La Presidenta
+
+Ursula VON DER LEYEN
+
+(1)   DO L 119 de 4.5.2016, p. 1.
+
+(2)   DO L 295 de 21.11.2018, p. 39.
+
+(3)  Dictamen Conjunto 1/2021 del CEPD-SEPD, sobre la Decisión de Ejecución de la Comisión Europea relativa a las cláusulas contractuales tipo entre responsables y encargados del tratamiento para las cuestiones a que se refieren el artículo 28, apartado 7, del Reglamento (UE) 2016/679 y el artículo29, apartado 7, del Reglamento (UE) 2018/1725.
+
+ANEXO
+
+Cláusulas contractuales tipo
+
+SECCIÓN I
+
+Cláusula 1
+
+Finalidad y ámbito de aplicación
+
+a)
+
+	
+
+La finalidad de las presentes cláusulas contractuales tipo (en lo sucesivo, «pliego de cláusulas») es garantizar que se cumpla [elíjase la opción pertinente: OPCIÓN 1: el artículo 28, apartados 3 y 4, del Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo, de 27 de abril de 2016, relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de estos datos, y por el que se deroga la Directiva 95/46/CE (Reglamento general de protección de datos)] / [OPCIÓN 2: el artículo 29, apartados 3 y 4, del Reglamento (UE) 2018/1725 del Parlamento Europeo y del Consejo, de 23 de octubre de 2018, relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales por las instituciones, órganos y organismos de la Unión, y a la libre circulación de estos datos, y por el que se derogan el Reglamento (CE) n.o 45/2001 y la Decisión n.o 1247/2002/CE].
+
+b)
+
+	
+
+Los responsables y encargados del tratamiento enumerados en el anexo I han dado su consentimiento a vincularse por el presente pliego de cláusulas a fin de garantizar el cumplimiento del artículo 28, apartados 3 y 4, del Reglamento (UE) 2016/679 y/o del artículo 29, apartados 3 y 4, del Reglamento (UE) 2018/1725.
+
+c)
+
+	
+
+El presente pliego de cláusulas se aplica al tratamiento de datos personales especificado en el anexo II.
+
+d)
+
+	
+
+Los anexos I a IV forman parte del pliego.
+
+e)
+
+	
+
+El presente pliego de cláusulas se entiende sin perjuicio de las obligaciones a las que esté sujeto el responsable en virtud del Reglamento (UE) 2016/679 y/o del Reglamento (UE) 2018/1725.
+
+f)
+
+	
+
+El presente pliego de cláusulas no garantiza por sí mismo el cumplimiento de las obligaciones relativas a las transferencias internacionales contempladas en el capítulo V del Reglamento (UE) 2016/679 y/o del Reglamento (UE) 2018/1725.
+
+Cláusula 2
+
+Invariabilidad del pliego de cláusulas
+
+a)
+
+	
+
+Las partes se comprometen a no modificar el pliego de cláusulas, excepto para añadir o actualizar información en los anexos.
+
+b)
+
+	
+
+Esto no es óbice para que las partes incluyan en un contrato más amplio las cláusulas contractuales tipo que contiene el presente pliego, ni para que añadan otras cláusulas o garantías adicionales siempre que no contradigan, directa o indirectamente, el pliego de cláusulas ni perjudiquen los derechos o libertades fundamentales de los interesados.
+
+Cláusula 3
+
+Interpretación
+
+a)
+
+	
+
+Cuando en el presente pliego de cláusulas se utilizan términos definidos en el Reglamento (UE) 2016/679 o en el Reglamento (UE) 2018/1725, se entiende que tienen el mismo significado que en el Reglamento correspondiente.
+
+b)
+
+	
+
+El presente pliego de cláusulas deberá leerse e interpretarse con arreglo a las disposiciones del Reglamento (UE) 2016/679 y/o del Reglamento (UE) 2018/1725.
+
+c)
+
+	
+
+No se podrán realizar interpretaciones del presente pliego de cláusulas que entren en conflicto con los derechos y obligaciones establecidos en el Reglamento (UE) 2016/679 y el Reglamento (UE) 2018/1725 y/o que perjudiquen los derechos o libertades fundamentales de los interesados.
+
+Cláusula 4
+
+Jerarquía
+
+En caso de contradicción entre el presente pliego de cláusulas y las disposiciones de acuerdos conexos entre las partes que estuvieren en vigor en el momento en que se pactare o comenzare a aplicarse el presente pliego de cláusulas, prevalecerá el presente pliego de cláusulas.
+
+Cláusula 5 (opcional)
+
+Cláusula de incorporación
+
+a)
+
+	
+
+Cualquier entidad que no sea parte en el presente pliego de cláusulas podrá, previo consentimiento de todas las partes, adherirse al presente pliego de cláusulas en cualquier momento, ya sea como responsable o como encargado, cumplimentando los anexos y firmando el anexo I.
+
+b)
+
+	
+
+Una vez se hayan cumplimentado y firmado los anexos a que se refiere la letra a), la entidad que se adhiera será tratada como parte en el presente pliego de cláusulas y tendrá los derechos y obligaciones de un responsable o encargado, según la categoría en la que se haya inscrito en el anexo I.
+
+c)
+
+	
+
+La entidad que se adhiera no adquirirá derechos y obligaciones del presente pliego de cláusulas derivados del período anterior a la adhesión.
+
+SECCIÓN II
+
+OBLIGACIONES DE LAS PARTES
+
+Cláusula 6
+
+Descripción del tratamiento o tratamientos
+
+En el anexo II se especifican los pormenores de las operaciones de tratamiento y, en particular, las categorías de datos personales y los fines para los que se tratan los datos personales por cuenta del responsable.
+
+Cláusula 7
+
+Obligaciones de las partes
+
+7.1.   Instrucciones
+
+a)
+
+	
+
+El encargado tratará los datos personales únicamente siguiendo instrucciones documentadas del responsable, salvo que esté obligado a ello en virtud del Derecho de la Unión o de los Estados miembros que se aplique al encargado. En tal caso, el encargado informará al responsable de esa exigencia legal previa al tratamiento, salvo que tal Derecho lo prohíba por razones importantes de interés público. El responsable también podrá dar instrucciones ulteriores en cualquier momento del período de tratamiento de los datos personales. Dichas instrucciones deberán estar siempre documentadas.
+
+b)
+
+	
+
+El encargado informará inmediatamente al responsable si las instrucciones dadas por el responsable infringen, a juicio del encargado, el Reglamento (UE) 2016/679, el Reglamento (UE) 2018/1725 o las disposiciones aplicables del Derecho de la Unión o de los Estados miembros en materia de protección de datos.
+
+7.2.   Limitación de la finalidad
+
+El encargado tratará los datos personales únicamente para los fines específicos del tratamiento indicados en el anexo II, salvo cuando siga instrucciones adicionales del responsable.
+
+7.3.   Duración del tratamiento de datos personales
+
+El tratamiento por parte del encargado solo se realizará durante el período especificado en el anexo II.
+
+7.4.   Seguridad del tratamiento
+
+a)
+
+	
+
+El encargado aplicará, como mínimo, las medidas técnicas y organizativas especificadas en el anexo III para garantizar la seguridad de los datos personales. Una de estas medidas podrá consistir en la protección contra violaciones de la seguridad que ocasionen la destrucción, pérdida o alteración accidental o ilícita de datos personales, o la comunicación o acceso no autorizados a dichos datos («violación de la seguridad de los datos personales»). A la hora de determinar un nivel adecuado de seguridad, las partes tendrán debidamente en cuenta el estado de la técnica, los costes de aplicación, la naturaleza, el alcance, el contexto y los fines del tratamiento, y los riesgos que entraña el tratamiento para los interesados.
+
+b)
+
+	
+
+El encargado solo concederá acceso a los datos personales tratados a los miembros de su personal en la medida en que sea estrictamente necesario para la ejecución, la gestión y el seguimiento del contrato. El encargado garantizará que las personas autorizadas para tratar los datos personales recibidos se hayan comprometido a respetar la confidencialidad o estén sujetas a una obligación de confidencialidad de naturaleza estatutaria.
+
+7.5.   Datos sensibles
+
+Si el tratamiento afecta a datos personales que revelen el origen étnico o racial, las opiniones políticas, las convicciones religiosas o filosóficas, o la afiliación sindical, datos genéticos o datos biométricos dirigidos a identificar de manera unívoca a una persona física, datos relativos a la salud o datos relativos a la vida sexual o la orientación sexual de una persona física, o datos relativos a condenas e infracciones penales («datos sensibles»), el encargado aplicará restricciones específicas y/o garantías adicionales.
+
+7.6.   Documentación y cumplimiento
+
+a)
+
+	
+
+Las partes deberán poder demostrar el cumplimiento del presente pliego de cláusulas.
+
+b)
+
+	
+
+El encargado resolverá con presteza y de forma adecuada las consultas del responsable relacionadas con el tratamiento con arreglo al presente pliego de cláusulas.
+
+c)
+
+	
+
+El encargado pondrá a disposición del responsable toda la información necesaria para demostrar el cumplimiento de las obligaciones contempladas en el presente pliego de cláusulas y que deriven directamente del Reglamento (UE) 2016/679 y del Reglamento (UE) 2018/1725. A instancia del responsable, el encargado permitirá y contribuirá a la realización de auditorías de las actividades de tratamiento cubiertas por el presente pliego de cláusulas, a intervalos razonables o si existen indicios de incumplimiento. Al decidir si se realiza un examen o una auditoría, el responsable podrá tener en cuenta las certificaciones pertinentes que obren en poder del encargado.
+
+d)
+
+	
+
+El responsable podrá optar por realizar la auditoría por sí mismo o autorizar a un auditor independiente. Las auditorías también podrán consistir en inspecciones de los locales o instalaciones físicas del encargado y, cuando proceda, realizarse con un preaviso razonable.
+
+e)
+
+	
+
+Las partes pondrán a disposición de las autoridades de control competentes, a instancia de estas, la información a que se refiere la presente cláusula y, en particular, los resultados de las auditorías.
+
+7.7.   Recurso a subencargados
+
+a)
+
+	
+
+OPCIÓN 1: AUTORIZACIÓN PREVIA ESPECÍFICA: El encargado solo podrá subcontratar a un subencargado las operaciones de tratamiento que realice por cuenta del responsable en virtud del presente pliego de cláusulas con la autorización previa específica por escrito del responsable. El encargado presentará la solicitud de autorización específica al menos [ESPECIFICAR PERIODO DE TIEMPO] antes de la contratación del subencargado de que se trate, junto con la información necesaria para que el responsable pueda resolver la solicitud. La lista de subencargados autorizados por el responsable figura en el anexo IV. Las partes mantendrán actualizado el anexo IV.
+
+OPCIÓN 2: AUTORIZACIÓN GENERAL POR ESCRITO: El encargado cuenta con una autorización general del responsable para contratar a subencargados que figuren en una lista acordada. El encargado informará al responsable específicamente y por escrito de las adiciones o sustituciones de subencargados previstas en dicha lista con al menos [ESPECIFICAR PERIODO DE TIEMPO] de antelación, de modo que el responsable tenga tiempo suficiente para formular objeción a tales cambios antes de que se contrate al subencargado o subencargados de que se trate. El encargado del tratamiento proporcionará al responsable la información necesaria para que pueda ejercer su derecho a formular objeción.
+
+b)
+
+	
+
+Cuando el encargado contrate a un subencargado para llevar a cabo actividades de tratamiento específicas (por cuenta del responsable), lo hará por medio de un contrato que imponga al subencargado, en esencia, las mismas obligaciones en materia de protección de datos que las impuestas al encargado en virtud del presente pliego de cláusulas. El encargado se asegurará de que el subencargado cumpla las obligaciones a las que esté sujeto en virtud del presente pliego de cláusulas y del Reglamento (UE) 2016/679 y/o del Reglamento (UE) 2018/1725.
+
+c)
+
+	
+
+El encargado proporcionará al responsable, a instancia de este, una copia del contrato con el subencargado y de cualquier modificación posterior del mismo. En la medida en que sea necesario para proteger secretos comerciales u otro tipo de información confidencial, como datos personales, el encargado podrá expurgar el texto del contrato antes de compartir la copia.
+
+d)
+
+	
+
+El encargado seguirá siendo plenamente responsable ante el responsable del cumplimiento de las obligaciones que imponga al subencargado su contrato con el encargado. El encargado notificará al responsable los incumplimientos por parte del subencargado de las obligaciones que le atribuya dicho contrato.
+
+e)
+
+	
+
+El encargado pactará con el subencargado una cláusula de tercero beneficiario en virtud de la cual, en caso de que el encargado desaparezca de facto, cese de existir jurídicamente o sea insolvente, el responsable tendrá derecho a rescindir el contrato del subencargado y ordenar a este que suprima o devuelva los datos personales.
+
+7.8.   Transferencias internacionales
+
+a)
+
+	
+
+Las transferencias de datos a un tercer país o a una organización internacional por parte del encargado solo podrán realizarse siguiendo instrucciones documentadas del responsable o en virtud de una exigencia expresa del Derecho de la Unión o del Estado miembro al que esté sujeto el encargado; se llevarán a cabo de conformidad con el capítulo V del Reglamento (UE) 2016/679 o del Reglamento (UE) 2018/1725.
+
+b)
+
+	
+
+El responsable se aviene a que, cuando el encargado recurra a un subencargado de conformidad con la cláusula 7.7 para llevar a cabo actividades de tratamiento específicas (por cuenta del responsable) y dichas actividades conlleven una transferencia de datos personales en el sentido del capítulo V del Reglamento (UE) 2016/679, el encargado y el subencargado puedan garantizar el cumplimiento del capítulo V del Reglamento (UE) 2016/679 utilizando cláusulas contractuales tipo adoptadas por la Comisión, con arreglo al artículo 46, apartado 2, del Reglamento (UE) 2016/679, siempre que se cumplan las condiciones para la utilización de dichas cláusulas contractuales tipo.
+
+Cláusula 8
+
+Ayuda al responsable del tratamiento
+
+a)
+
+	
+
+El encargado notificará con presteza al responsable las solicitudes que reciba del interesado. No responderá a dicha solicitud por sí mismo, a menos que el responsable le haya autorizado a hacerlo.
+
+b)
+
+	
+
+El encargado ayudará al responsable a cumplir sus obligaciones al responder a las solicitudes de ejercicio de derechos de los interesados teniendo en cuenta la naturaleza del tratamiento. En el cumplimiento de las obligaciones que le atribuyen las letras a) y b), el encargado cumplirá las instrucciones del responsable.
+
+c)
+
+	
+
+Además de la obligación del encargado de ayudar al responsable en virtud de la cláusula 8, letra b), el encargado también ayudará al responsable a garantizar el cumplimiento de las obligaciones siguientes teniendo en cuenta la naturaleza del tratamiento y la información de que disponga el encargado:
+
+1)
+
+	
+
+la obligación de realizar una evaluación del impacto de las operaciones de tratamiento en la protección de datos personales («evaluación de impacto») cuando sea probable que un tipo de tratamiento suponga un alto riesgo para los derechos y libertades de las personas físicas;
+
+2)
+
+	
+
+la obligación de consultar a las autoridades de control competentes antes de proceder al tratamiento cuando una evaluación de impacto relativa a la protección de los datos muestre que el tratamiento entrañaría un alto riesgo si el responsable no toma medidas para mitigarlo;
+
+3)
+
+	
+
+la obligación de garantizar que los datos personales sean exactos y estén actualizados, informando sin demora al responsable si el encargado descubre que los datos personales que está tratando son inexactos o han quedado obsoletos;
+
+4)
+
+	
+
+las obligaciones contempladas en [OPCIÓN 1] el artículo 32 del Reglamento (UE) 2016/679 / [OPCIÓN 2] los artículos 33 y 36 a 38 del Reglamento (UE) 2018/1725.
+
+d)
+
+	
+
+Las partes establecerán en el anexo III medidas técnicas y organizativas apropiadas que obliguen al encargado a ayudar al responsable a aplicar la presente cláusula, así como el objeto y el alcance de la ayuda requerida.
+
+Cláusula 9
+
+Notificación de violaciones de la seguridad de los datos personales
+
+En caso de violación de la seguridad de los datos personales, el encargado colaborará con el responsable y le ayudará a cumplir las obligaciones que le atribuyen los artículos 33 y 34 del Reglamento (UE) 2016/679 o los artículos 34 y 35 del Reglamento (UE) 2018/1725, en su caso, teniendo en cuenta la naturaleza del tratamiento y la información de que disponga el encargado.
+
+9.1.   Violación de la seguridad de datos personales tratados por el responsable
+
+En caso de violación de la seguridad de los datos personales en relación con los datos tratados por el responsable, el encargado ayudará al responsable en lo siguiente.
+
+a)
+
+	
+
+Notificar la violación de la seguridad de los datos personales a las autoridades de control competentees sin dilación indebida una vez tenga constancia de ella, si procede (a menos que sea improbable que dicha violación de la seguridad constituya un riesgo para los derechos y las libertades de las personas físicas).
+
+b)
+
+	
+
+Recabar la información siguiente, que, de conformidad con [OPCIÓN 1] el artículo 33, apartado 3, del Reglamento (UE) 2016/679 / [OPCIÓN 2] el artículo 34, apartado 3, del Reglamento (UE) 2018/1725, deberá figurar en la notificación del responsable, que debe incluir como mínimo:
+
+1)
+
+	
+
+la naturaleza de los datos personales, inclusive, cuando sea posible, las categorías y el número aproximado de interesados afectados, y las categorías y el número aproximado de registros de datos personales afectados;
+
+2)
+
+	
+
+las consecuencias probables de la violación de la seguridad de los datos personales;
+
+3)
+
+	
+
+las medidas adoptadas o propuestas por el responsable del tratamiento para poner remedio a la violación de la seguridad de los datos personales, incluyendo, si procede, las medidas adoptadas para mitigar los posibles efectos negativos.
+
+Cuando y en la medida en que no se pueda proporcionar toda la información al mismo tiempo, en la notificación inicial se proporcionará la información de que se disponga en ese momento y, a medida que se vaya recabando, la información adicional se irá proporcionando sin dilación indebida.
+
+c)
+
+	
+
+Cumplir, con arreglo al [OPCIÓN 1] artículo 34 del Reglamento (UE) 2016/679 / [OPCIÓN 2] artículo 35 del Reglamento (UE) 2018/1725, la obligación de comunicar sin dilación indebida al interesado la violación de la seguridad de los datos personales cuando sea probable que la violación de la seguridad entrañe un alto riesgo para los derechos y libertades de las personas físicas.
+
+9.2.   Violación de la seguridad de datos personales tratados por el encargado
+
+En caso de violación de la seguridad de datos personales tratados por el encargado, este lo notificará al responsable sin dilación indebida una vez que el encargado tenga constancia de ella. Dicha notificación deberá incluir como mínimo:
+
+a)
+
+	
+
+una descripción de la naturaleza de la violación de la seguridad (inclusive, cuando sea posible, las categorías y el número aproximado de interesados y de registros de datos afectados);
+
+b)
+
+	
+
+los datos de un punto de contacto en el que pueda obtenerse más información sobre la violación de la seguridad de los datos personales;
+
+c)
+
+	
+
+sus consecuencias probables y las medidas adoptadas o propuestas para poner remedio a la violación de la seguridad, incluyendo las medidas adoptadas para mitigar los posibles efectos negativos.
+
+Cuando y en la medida en que no se pueda proporcionar toda la información al mismo tiempo, en la notificación inicial se proporcionará la información de que se disponga en ese momento y, a medida que se vaya recabando, la información adicional se irá proporcionando sin dilación indebida.
+
+Las partes establecerán en el anexo III los demás elementos que deberá aportar el encargado cuando ayude al responsable a cumplir las obligaciones que le atribuyen [OPCIÓN 1] los artículos 33 y 34 del Reglamento (UE) 2016/679 / [OPCIÓN 2] los artículos 34 y 35 del Reglamento (UE) 2018/1725.
+
+SECCIÓN III
+
+DISPOSICIONES FINALES
+
+Cláusula 10
+
+Incumplimiento de las cláusulas y resolución del contrato
+
+a)
+
+	
+
+Sin perjuicio de lo dispuesto en el Reglamento (UE) 2016/679 y/o el Reglamento (UE) 2018/1725, en caso de que el encargado del tratamiento incumpla las obligaciones que le atribuye el presente pliego de cláusulas, el responsable podrá ordenar al encargado que suspenda el tratamiento de datos personales hasta que este vuelva a dar cumplimiento al presente pliego de cláusulas, o resolver el contrato. El encargado informará con presteza al responsable en caso de que no pueda dar cumplimiento al presente pliego de cláusulas por cualquier motivo.
+
+b)
+
+	
+
+El responsable estará facultado para resolver el contrato en lo que se refiera al tratamiento de datos personales en virtud del presente pliego de cláusulas cuando:
+
+1)
+
+	
+
+el tratamiento de datos personales por parte del encargado haya sido suspendido por el responsable con arreglo a la letra a) y no se vuelva a dar cumplimiento al presente pliego de cláusulas en un plazo razonable y, en cualquier caso, en un plazo de un mes a contar desde la suspensión;
+
+2)
+
+	
+
+el encargado incumpla de manera sustancial o persistente el presente pliego de cláusulas o las obligaciones que le atribuye el Reglamento (UE) 2016/679 y/o el Reglamento (UE) 2018/1725;
+
+3)
+
+	
+
+el encargado incumpla una resolución vinculante de un órgano jurisdiccional competente o de las autoridades de control competentes en relación con las obligaciones que les atribuye el presente pliego de cláusulas, el Reglamento (UE) 2016/679 y/o el Reglamento (UE) 2018/1725.
+
+c)
+
+	
+
+El encargado estará facultado para resolver el contrato en lo que se refiera al tratamiento de datos personales en virtud del presente pliego de cláusulas cuando, tras haber informado al responsable de que sus instrucciones infringen los requisitos jurídicos exigidos por la cláusula 7.1, letra b), el responsable insiste en que se sigan dichas instrucciones.
+
+d)
+
+	
+
+Tras la resolución del contrato, el encargado suprimirá, a petición del responsable, todos los datos personales tratados por cuenta del responsable y acreditará al responsable que lo ha hecho, o devolverá todos los datos personales al responsable y suprimirá las copias existentes, a menos que el Derecho de la Unión o de los Estados miembros exija el almacenamiento de los datos personales. Hasta que se destruyan o devuelvan los datos, el encargado seguirá garantizando el cumplimiento con el presente pliego de cláusulas.
+
+ANEXO I
+
+Lista de partes
+
+Responsable(s): [Identidad y datos de contacto del responsable o responsables del tratamiento y, en su caso, del delegado de protección de datos]
+
+1.
+
+	
+
+Nombre: …
+
+ 
+
+	
+
+Dirección: …
+
+ 
+
+	
+
+Nombre, cargo y datos de contacto de la persona de contacto: …
+
+ 
+
+	
+
+Firma y fecha de adhesión: …
+
+2.
+
+	
+
+ 
+
+…
+
+Encargado(s): [Identidad y datos de contacto del encargado o encargados del tratamiento y, en su caso, del delegado de protección de datos]
+
+1.
+
+	
+
+Nombre: …
+
+ 
+
+	
+
+Dirección: …
+
+ 
+
+	
+
+Nombre, cargo y datos de contacto de la persona de contacto: …
+
+ 
+
+	
+
+Firma y fecha de adhesión: …
+
+2.
+
+	
+
+ 
+
+…
+
+ANEXO II
+
+Descripción del tratamiento
+
+Categorías de interesados cuyos datos personales se tratan
+
+…
+
+Categorías de datos personales tratados
+
+…
+
+Datos sensibles tratados (si procede) y restricciones o garantías aplicadas que tengan plenamente en cuenta la naturaleza de los datos y los riesgos que entrañan, como, por ejemplo, la limitación estricta de la finalidad, restricciones de acceso (incluido el acceso exclusivo del personal que haya hecho un curso especializado), un registro del acceso a los datos, restricciones a transferencias ulteriores o medidas de seguridad adicionales.
+
+…
+
+Naturaleza del tratamiento
+
+…
+
+Finalidad(es) del tratamiento de los datos personales por cuenta del responsable del tratamiento
+
+…
+
+Duración del tratamiento
+
+…
+
+…
+
+En caso de tratamiento por parte de (sub)encargados, especifíquese también el objeto, la naturaleza y la duración del tratamiento
+
+ANEXO III
+
+Medidas técnicas y organizativas, en especial medidas técnicas y organizativas para garantizar la seguridad de los datos
+
+NOTA ACLARATORIA:
+
+Las medidas técnicas y organizativas deben describirse de manera concreta y no de manera genérica.
+
+Descripción de las medidas de seguridad técnicas y organizativas aplicadas por los encargados del tratamiento (inclusive las certificaciones pertinentes) para garantizar un nivel adecuado de seguridad, teniendo en cuenta la naturaleza, el alcance, el contexto y la finalidad del tratamiento, así como los riesgos para los derechos y libertades de las personas físicas. Ejemplos de medidas posibles:
+
+ 
+
+	
+
+Medidas de seudonimización y cifrado de los datos personales
+
+ 
+
+	
+
+Medidas para garantizar la confidencialidad, integridad, disponibilidad y resiliencia permanentes de los sistemas y servicios de tratamiento
+
+ 
+
+	
+
+Medidas para restaurar la disponibilidad y el acceso a los datos personales de forma rápida en caso de incidente físico o técnico
+
+ 
+
+	
+
+Procesos de verificación, evaluación y valoración regulares de la eficacia de las medidas técnicas y organizativas para garantizar la seguridad del tratamiento
+
+ 
+
+	
+
+Medidas para la identificación y autorización del usuario
+
+ 
+
+	
+
+Medidas para la protección de los datos durante la transmisión
+
+ 
+
+	
+
+Medidas para la protección de los datos durante el almacenamiento
+
+ 
+
+	
+
+Medidas para garantizar la seguridad física de los lugares en los que se tratan los datos personales
+
+ 
+
+	
+
+Medidas para garantizar el registro de incidentes
+
+ 
+
+	
+
+Medidas para garantizar la configuración del sistema, en especial la configuración por defecto
+
+ 
+
+	
+
+Medidas de gobernanza y gestión de la informática y la seguridad informática internas
+
+ 
+
+	
+
+Medidas para la certificación/garantía de procesos y productos
+
+ 
+
+	
+
+Medidas para garantizar la minimización de datos
+
+ 
+
+	
+
+Medidas para garantizar la calidad de los datos
+
+ 
+
+	
+
+Medidas para garantizar una retención limitada de los datos
+
+ 
+
+	
+
+Medidas para garantizar la responsabilidad proactiva
+
+ 
+
+	
+
+Medidas para permitir la portabilidad de los datos y garantizar la supresión
+
+En el caso de las transferencias a (sub)encargados, descríbanse también las medidas técnicas y organizativas específicas que deberá adoptar el (sub)encargado para poder prestar ayudar al responsable.
+
+Descripción de las medidas técnicas y organizativas específicas que deberá adoptar el encargado para poder prestar ayuda al responsable.
+
+ANEXO IV
+
+Lista de subencargados del tratamiento
+
+NOTA ACLARATORIA:
+
+Debe cumplimentarse este anexo cuando sea necesaria la autorización específica de uno o más subencargados [cláusula 7.7, letra a), opción 1].
+
+El responsable ha autorizado que se recurra a los subencargados siguientes:
+
+1.
+
+	
+
+Nombre: …
+
+ 
+
+	
+
+Dirección: …
+
+ 
+
+	
+
+Nombre, cargo y datos de contacto de la persona de contacto: …
+
+ 
+
+	
+
+Descripción del tratamiento (incluida una delimitación bien definida de las responsabilidades si se autoriza a varios subencargados): …
+
+2.
+
+	
+
+…

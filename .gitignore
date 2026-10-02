@@ -13,3 +13,5 @@ data/chroma/
 *.snm
 *.toc
 *.vrb
+.playwright-mcp/
+agente_terceros/data/terceros.db

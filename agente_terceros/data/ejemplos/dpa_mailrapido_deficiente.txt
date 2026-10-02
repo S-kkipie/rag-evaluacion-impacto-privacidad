@@ -1,0 +1,32 @@
+ACUERDO DE SERVICIOS DE MAILING
+
+Entre UNIVERSIDAD ANDINA DEL SUR ("el Cliente") y MAILRÁPIDO LLC, empresa constituida en Delaware, Estados Unidos ("el Proveedor").
+
+1. Servicio
+El Proveedor enviará boletines y comunicaciones por correo electrónico a la base de datos de postulantes del Cliente (nombres, correo electrónico, teléfono y carrera de interés).
+
+2. Vigencia
+Este acuerdo tiene vigencia de un año desde el 1 de diciembre de 2025 y se renueva automáticamente salvo aviso en contrario.
+
+3. Uso de la información
+El Proveedor usará la información proporcionada para prestar el servicio y para mejorar sus productos y elaborar estadísticas comerciales agregadas.
+
+4. Seguridad
+El Proveedor aplicará medidas de seguridad razonables según los estándares de la industria.
+
+5. Proveedores del Proveedor
+El Proveedor podrá apoyarse en terceros proveedores de infraestructura y analítica a su criterio, sin necesidad de aviso al Cliente.
+
+6. Incidentes
+En caso de un incidente de seguridad, el Proveedor informará al Cliente cuando lo considere pertinente.
+
+7. Confidencialidad
+Las partes mantendrán la confidencialidad de la información comercial intercambiada.
+
+8. Terminación
+Cualquiera de las partes puede terminar el acuerdo con 30 días de aviso. El Proveedor podrá conservar la información del Cliente por el tiempo que considere necesario.
+
+9. Ley aplicable
+Este acuerdo se rige por las leyes del Estado de Delaware.
+
+Firmado el 1 de diciembre de 2025.

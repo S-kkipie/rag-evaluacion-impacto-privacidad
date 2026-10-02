@@ -1,0 +1,50 @@
+CONTRATO DE ENCARGO DE TRATAMIENTO DE DATOS PERSONALES
+
+Entre UNIVERSIDAD ANDINA DEL SUR (en adelante, "el Responsable"), titular del banco de datos personales "Trabajadores", y NUBESEGURA S.A.C., con RUC 20123456789 (en adelante, "el Encargado"), se celebra el presente contrato al amparo del artículo 30 de la Ley N.º 29733 y de su Reglamento aprobado por D.S. N.º 016-2024-JUS.
+
+Cláusula primera. Objeto, naturaleza y finalidad
+El Encargado prestará el servicio de alojamiento y operación del sistema ERP de planillas. El tratamiento consistirá en el almacenamiento, respaldo y consulta de los datos personales con la única finalidad de procesar las remuneraciones del personal del Responsable.
+
+Cláusula segunda. Tipo de datos y categorías de titulares
+Se tratarán datos de identificación (nombres, DNI, domicilio), datos económicos (cuenta bancaria, remuneración) y datos de salud (descansos médicos). Los titulares son los trabajadores y practicantes del Responsable.
+
+Cláusula tercera. Duración
+El presente contrato tiene una duración de dos (2) años contados desde su firma, el 15 de enero de 2026, y vence el 14 de enero de 2028.
+
+Cláusula cuarta. Instrucciones del Responsable
+El Encargado tratará los datos personales únicamente siguiendo instrucciones documentadas del Responsable. Si el Encargado considera que una instrucción infringe la Ley N.º 29733 u otra norma de protección de datos, informará inmediatamente al Responsable.
+
+Cláusula quinta. Prohibición de uso para fines propios
+El Encargado no aplicará ni utilizará los datos personales con un fin distinto al que figura en este contrato, ni los transferirá a otras personas, ni siquiera para su conservación.
+
+Cláusula sexta. Confidencialidad
+El Encargado garantiza que las personas autorizadas para tratar los datos personales se han comprometido por escrito a respetar la confidencialidad, obligación que subsiste tras la terminación de su relación laboral.
+
+Cláusula séptima. Medidas de seguridad
+El Encargado implementará las medidas técnicas y organizativas descritas en el Anexo II, que incluyen cifrado AES-256 en reposo, TLS 1.2 o superior en tránsito, autenticación multifactor para administradores, copias de respaldo diarias y registros de acceso conservados por un año, conforme a la Directiva de Seguridad de la Información de la Autoridad Nacional de Protección de Datos Personales.
+
+Cláusula octava. Subencargados
+El Encargado no recurrirá a otro encargado sin la autorización previa y por escrito del Responsable. El Encargado informará al Responsable, con treinta (30) días de antelación, de cualquier cambio previsto en la incorporación o sustitución de subencargados, dándole la oportunidad de oponerse. El subencargado quedará sujeto, mediante contrato, a las mismas obligaciones de protección de datos establecidas en el presente contrato. A la fecha se autoriza como subencargado a Amazon Web Services para el almacenamiento de respaldos.
+
+Cláusula novena. Derechos de los titulares
+El Encargado asistirá al Responsable, mediante medidas técnicas y organizativas apropiadas, para que este pueda responder a las solicitudes de ejercicio de los derechos de acceso, rectificación, cancelación y oposición de los titulares dentro de los plazos legales.
+
+Cláusula décima. Incidentes de seguridad
+El Encargado notificará al Responsable, sin dilación indebida y en un plazo máximo de veinticuatro (24) horas desde que tenga conocimiento, cualquier incidente de seguridad que afecte a los datos personales, incluyendo la naturaleza del incidente, las categorías y el número aproximado de titulares afectados y las medidas adoptadas, y asistirá al Responsable en la notificación a la Autoridad Nacional de Protección de Datos Personales dentro de las 48 horas.
+
+Cláusula undécima. Evaluaciones de impacto
+El Encargado ayudará al Responsable a realizar las evaluaciones de impacto relativas a la protección de datos personales que este decida llevar a cabo, teniendo en cuenta la naturaleza del tratamiento y la información a su disposición.
+
+Cláusula duodécima. Auditorías
+El Encargado pondrá a disposición del Responsable toda la información necesaria para demostrar el cumplimiento de las obligaciones de este contrato y permitirá y contribuirá a la realización de auditorías, incluidas inspecciones, por parte del Responsable o de un auditor autorizado por este, con un preaviso de diez (10) días hábiles.
+
+Cláusula decimotercera. Solicitudes de autoridades
+Si una autoridad competente solicita acceso a los datos personales, el Encargado informará de ese hecho al Responsable antes de atender la solicitud, salvo que una norma se lo prohíba.
+
+Cláusula decimocuarta. Transferencias internacionales
+Los respaldos se alojan en la región AWS de São Paulo (Brasil). Dicha transferencia internacional se realiza bajo cláusulas contractuales que garantizan un nivel de protección adecuado, conforme al artículo 15 de la Ley N.º 29733 y a los artículos 12 a 14 de su Reglamento. Cualquier nuevo país de destino requerirá autorización previa del Responsable.
+
+Cláusula decimoquinta. Fin de la prestación
+Al finalizar la prestación del servicio, el Encargado devolverá al Responsable todos los datos personales en formato CSV y, una vez confirmada su recuperación, los suprimirá de forma segura, incluidas las copias de respaldo, entregando un certificado de supresión en un plazo de treinta (30) días, salvo que una norma exija su conservación.
+
+Firmado en Arequipa, el 15 de enero de 2026.
